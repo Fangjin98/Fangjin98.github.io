@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://fangjin98.github.io/resume/index.html</loc>
+    
+    <lastmod>2021-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fangjin98.github.io/2021/08/01/RobustVNFPlacement/</loc>
+    
+    <lastmod>2021-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fangjin98.github.io/2021/12/10/InnetworkAggregation/</loc>
+    
+    <lastmod>2021-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fangjin98.github.io/draft/hello-world.html</loc>
+    
+    <lastmod>2021-12-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  <url>
+    <loc>https://fangjin98.github.io/</loc>
+    <lastmod>2021-12-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://fangjin98.github.io/tags/Paper/</loc>
+    <lastmod>2021-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fangjin98.github.io/tags/Ongoing/</loc>
+    <lastmod>2021-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fangjin98.github.io/tags/Machine-Learning/</loc>
+    <lastmod>2021-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fangjin98.github.io/tags/P4/</loc>
+    <lastmod>2021-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fangjin98.github.io/tags/Edge-Computing/</loc>
+    <lastmod>2021-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+</urlset>
