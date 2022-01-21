@@ -1,7 +1,7 @@
 ---
+title: About me
 date: 2021-12-23 16:55:31
 ---
-# About me
 
 I am a master student in the Department of Computer Science at University of Science and Technology of China (USTC). I received my bachelor's degree from the College of Computer Science and Electronic Engineering, Hunan University (HNU).
 
