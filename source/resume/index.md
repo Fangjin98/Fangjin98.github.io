@@ -9,23 +9,14 @@ My research interest lies in the field of *distributed systems and computer netw
 
 Contact me -> Fangjin98@outlook.com.
 
-# Others
+<!-- ## Experience -->
 
-* Reading science fictions
-* Watching movies
+<!-- ## Awards -->
+## Others
+
 * TED translator
   * [What's it like to be a robot.](https://www.ted.com/talks/leila_takayama_what_s_it_like_to_be_a_robot#t-2616)
-* Powerlifting
+* Powerlifting amateur
   * Squad: 310lbs
-  * Benchpress:200lbs
+  * Benchpress: 200lbs
   * Deadlifting: 310lbs
-
-<!-- ## Experience
-
-1.  -->
-
-
-<!-- ## Awards
-* XXX 优秀新人
-* XXX 学生社团优秀干部
-* 竞赛 XXX 奖 -->
