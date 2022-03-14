@@ -2,9 +2,8 @@
 title: In-network Computation with Programmable Switches
 date: 2021-12-10 17:09:56
 tags:
- - Paper
- - Ongoing
- - Machine Learning
+ - ongoing
+ - distributed machine learning
 ---
 
 > This paper is ongoning.
