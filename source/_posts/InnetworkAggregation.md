@@ -6,7 +6,7 @@ tags:
  - distributed machine learning
 ---
 
-> This paper is ongoning.
+> Submitted to JSAC.
 
 ## Motivation
 
