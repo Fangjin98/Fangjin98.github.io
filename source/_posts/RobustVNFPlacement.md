@@ -1,8 +1,9 @@
 ---
-title: Robust VNF Placement and Request Routing in MEC
+title: Paper | Robust VNF Placement and Request Routing in MEC
 date: 2021-8-1 17:07:02
 tags:
  - finished
+ - VNF placement
  - edge computing
 ---
 

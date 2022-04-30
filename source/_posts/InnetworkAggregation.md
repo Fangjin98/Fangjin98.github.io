@@ -1,8 +1,10 @@
 ---
-title: In-network Computation with Programmable Switches
+title: Paper | Gradient Routing with In-network Aggregation for Distributed Model Training
 date: 2021-12-10 17:09:56
-tags:
- - ongoing
+tags: 
+ - finished
+ - programmable switch
+ - in-network aggregation
  - distributed machine learning
 ---
 
