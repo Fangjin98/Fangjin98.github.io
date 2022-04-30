@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://fangjin98.github.io/2022/04/30/DayDayUp/</loc>
+    
+    <lastmod>2022-04-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fangjin98.github.io/2021/12/10/InnetworkAggregation/</loc>
     
     <lastmod>2022-04-30</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://fangjin98.github.io/2021/08/01/RobustVNFPlacement/</loc>
-    
-    <lastmod>2022-04-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://fangjin98.github.io/2022/04/30/DayDayUp/</loc>
     
     <lastmod>2022-04-30</lastmod>
     
