@@ -12,6 +12,11 @@ Contact me -> Fangjin98@outlook.com.
 <!-- ## Experience -->
 
 <!-- ## Awards -->
+
+## Patents
+
+* 《一种边缘云系统中的VNF部署调度方法》[Published：CN113961324A]
+
 ## Others
 
 * TED translator
