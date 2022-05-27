@@ -10,14 +10,11 @@ tags:
 > ~~Estimated release date: 2022.5.31.~~
 > Estimated release date: 2022.6.31.
 
-
-<div align="center"> <img src=logo.jpg/> </div>
-
 <p align="center">
   An Easy-To-Use Todo Manager with Time Estimation Tracking.  
 </p>
 
-<p align="center"> <img src=1.jpg alt="screenshot" /> </p>
+<p align="center"> <img src=1.png alt="screenshot" /> </p>
 
 
 ## Motivation
