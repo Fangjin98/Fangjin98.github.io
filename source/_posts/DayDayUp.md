@@ -2,20 +2,19 @@
 title: Application | DayDayUp
 date: 2022-04-30 23:44:25
 tags:
- - in progress
  - UWP
  - Windows App SDK
  - C#
 ---
 > ~~Estimated release date: 2022.5.31.~~
-> Estimated release date: 2022.6.31.
+> ~~Estimated release date: 2022.6.31.~~
+> Published in <https://github.com/Fangjin98/DayDayUp>
 
 <p align="center">
   An Easy-To-Use Todo Manager with Time Estimation Tracking.  
 </p>
 
 <p align="center"> <img src=1.png alt="screenshot" /> </p>
-
 
 ## Motivation
 
@@ -25,7 +24,7 @@ Time estimation is a key need for todo management. We help you to better estimat
 
 We first give the defintion of _duration_, _estimated duration_ and _real durations_.
 
-1. _duration_ is the total time to complete a todo. When you completed a todo (pressed the checkbox), The application would calculate the _duration_ by subtracting the creation time from the completion time. Only finished todos have the _duration_.
+1. _duration_ is the total time to complete a todo. When you completed a todo (pressed the checkbox), the application would calculate the _duration_ by subtracting the creation time from the completion time. Only finished todos have the _duration_.
 2. _estimated duration_ is set when (after) you create a todo. It is the duration you expect to complete this todo. The _estimated duration_ is set by users for unfinished todos.
 3. _real durations_ are calculated by DayDayUp based on the _duration_ of finished todos. It is a set of values, representing the _durations_ under different probabilities.
 
