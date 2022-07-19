@@ -1,5 +1,5 @@
 ---
-title: Paper | Robust VNF Placement and Request Routing in MEC
+title: Research | Robust VNF Placement and Request Routing in MEC
 date: 2021-8-1 17:07:02
 tags:
  - finished
@@ -7,9 +7,9 @@ tags:
  - edge computing
 ---
 
-> This paper got the scores of 3 3 2 1 in INFOCOM22.
-> 
-> (Sad) 3 3 1 in IWQoS 2022.
+> INFOCOM22: (Rejected) Scores 3 3 2 1.
+> IWQoS 2022: (Rejected) Scores 3 3 1.
+> SECON 2022: (Rejected) Scores 3 2 2.
 
 ## Abstract
 
