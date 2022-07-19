@@ -1,5 +1,5 @@
 ---
-title: Paper Reading | NetHint
+title: Reading Summary of NetHint
 tags:
  - paper reading
  - NSDI' 22

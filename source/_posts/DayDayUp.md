@@ -1,5 +1,5 @@
 ---
-title: Application | DayDayUp
+title: Devlopment | DayDayUp
 date: 2022-04-30 23:44:25
 tags:
  - UWP

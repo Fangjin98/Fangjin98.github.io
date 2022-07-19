@@ -1,5 +1,5 @@
 ---
-title: Paper | Gradient Routing with In-network Aggregation for Distributed Model Training
+title: Research | Gradient Routing with In-network Aggregation for Distributed Model Training
 date: 2021-12-10 17:09:56
 tags: 
  - finished
