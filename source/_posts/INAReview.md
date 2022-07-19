@@ -1,5 +1,5 @@
 ---
-title: [Paper reading] In-network aggregation
+title: Research on In-network Aggregation
 date: 2022-01-04
 tags:
    - paper reading
@@ -16,6 +16,8 @@ Reducing the number of gradient transfered by hosts throughput in-network aggreg
 1. DAIET: Furthermore, it (refer to in-network aggregation) can help reducing network traffic, so as to alleviate congestion, which is a major cause of application performance degradation
 2. SHARP: Implement in dedicated switches, and the function is programmed in the chip.
 3. iSwitch: Aiming at asynchronous RL training, which has a much smaller model size than the size of a typical DNN model. Thus, they can store the total model into the memory of programmable switches.
+4. SwitchML: Using a programmable switch to replace the PS to aggregate the gradients.
+5. ATP: Using programmable switches. However, they adopt static routing scheme, may leading to poor performance.
 
 **KEYWORDS**
 
@@ -25,16 +27,13 @@ Reducing the number of gradient transfered by hosts throughput in-network aggreg
 **FEATURES**
 
 - consider the impact of in-network aggregation to synchronous training and asynchronous training
-    - Synchronous: reduce end-to-end latency.
-    - Asynchronous: convergence with faster weight updates.
+  - Synchronous: reduce end-to-end latency.
+  - Asynchronous: convergence with faster weight updates.
 - Hierarchical aggregation at the rack scale.
-    - The switch will forward the aggregated segment to the switches in the higher level for global aggregation.
-    - The switch will select the one with the smallest value of IP address among the multiple higher level switches.
+  - The switch will forward the aggregated segment to the switches in the higher level for global aggregation.
+  - The switch will select the one with the smallest value of IP address among the multiple higher level switches.
 - The control plane  maintains a member ship table for the current training job.
 - **Asynchronous training: Local gradient computing, gradient aggregation and weight update can be pipelined.**
-
-1. SwitchML: Using a programmable switch to replace the PS to aggregate the gradients.
-2. ATP: Using programmable switches. However, they adopt static routing scheme, may leading to poor performance.
 
 <!-- **CHALLENGES**
 
@@ -57,8 +56,6 @@ Reducing the number of gradient transfered by hosts throughput in-network aggreg
 --- -->
 
 <!-- ## **SwitchMl**
-
-
 
 **CHALLENGES**
 
