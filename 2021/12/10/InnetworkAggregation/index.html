@@ -11,13 +11,13 @@
   <meta charset="utf-8">
 
   
-  <title>Paper | Gradient Routing with In-network Aggregation for Distributed Model Training</title>
+  <title>Research | Gradient Routing with In-network Aggregation for Distributed Model Training</title>
   
   <link rel="sitemap" href="https://Fangjin98.github.iositemap.xml" />
   
   <link rel="canonical" href="https://fangjin98.github.io/2021/12/10/InnetworkAggregation/">
   
-  <meta name="description" content="Submitted to JSAC.  MotivationTo be brief, we intend to use programmable switches to aggregate gradients in-network to accelerate the ML training task">
+  <meta name="description" content="Submitted to JSAC (2022.4.17). JSAC: (Rejected) Scores 4 4 4 6 3 3.  Abstract As the scale of distributed model training increases, it brings huge com">
   
   
   <meta name="keywords" content="CS, Computer Networks, Powerlifting">
@@ -28,16 +28,16 @@
   
   <meta property="og:site_name" content="Joey&#39;s Blog" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Paper | Gradient Routing with In-network Aggregation for Distributed Model Training" />
+  <meta property="og:title" content="Research | Gradient Routing with In-network Aggregation for Distributed Model Training" />
   
-  <meta property="og:description" content="Submitted to JSAC.  MotivationTo be brief, we intend to use programmable switches to aggregate gradients in-network to accelerate the ML training task">
+  <meta property="og:description" content="Submitted to JSAC (2022.4.17). JSAC: (Rejected) Scores 4 4 4 6 3 3.  Abstract As the scale of distributed model training increases, it brings huge com">
   
   <meta property="og:url" content="https://fangjin98.github.io/2021/12/10/InnetworkAggregation/" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Paper | Gradient Routing with In-network Aggregation for Distributed Model Training">
+  <meta name="twitter:title" content="Research | Gradient Routing with In-network Aggregation for Distributed Model Training">
   
-  <meta name="twitter:description" content="Submitted to JSAC.  MotivationTo be brief, we intend to use programmable switches to aggregate gradients in-network to accelerate the ML training task">
+  <meta name="twitter:description" content="Submitted to JSAC (2022.4.17). JSAC: (Rejected) Scores 4 4 4 6 3 3.  Abstract As the scale of distributed model training increases, it brings huge com">
   
   
   <meta name="twitter:image" content="https://Fangjin98.github.ioundefined">
@@ -56,24 +56,24 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
-<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="../../../../css/normalize.css">
 
   
-<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="../../../../css/skeleton.css">
 
   
-<link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="../../../../css/custom.css">
 
   
-<link rel="stylesheet" href="/css/prism-dark.css">
+<link rel="stylesheet" href="../../../../css/prism-dark.css">
 
   
-<link rel="stylesheet" href="/css/prism-line-numbers.css">
+<link rel="stylesheet" href="../../../../css/prism-line-numbers.css">
 
   <!-- User css -->
   
   
-<link rel="stylesheet" href="/css/user.css">
+<link rel="stylesheet" href="../../../../css/user.css">
 
   
 
@@ -163,7 +163,7 @@
 
   <div class="six columns ml-1">
     <h1 class="mt-2">
-      Hi Guys.
+      Hello World.
     </h1>
   </div>
 
@@ -173,7 +173,7 @@
         <a href="/">Home</a>
         
           
-          <a href="/resume" class="ml">Resume</a>
+          <a href="../../../../resume" class="ml">Resume</a>
           
         
         
@@ -184,15 +184,45 @@
 </div>
 
         <div class="trans">
-            <h2>Paper | Gradient Routing with In-network Aggregation for Distributed Model Training</h2>
+            <h2>Research | Gradient Routing with In-network Aggregation for Distributed Model Training</h2>
 
   <blockquote>
-<p>Submitted to JSAC.</p>
+<p><s>Submitted to JSAC (2022.4.17).</s><br>
+JSAC: (Rejected) Scores 4 4 4 6 3 3.</p>
 </blockquote>
-<h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><p>To be brief, we intend to use programmable switches to aggregate gradients in-network to accelerate the ML training tasks. Besides, we design a routing algorithm to schedule gradients aggregating in programmable switches and a protocol to overcome the challenges of in-network aggregation.</p>
+<h2 id="abstract">Abstract</h2>
+<p>As the scale of distributed model training increases, it brings huge communication overhead in clusters. Some works try to reduce the communication cost through gradient compression or communication scheduling. However, these methods either downgrade the training accuracy or do not reduce the total transmission amount. One promising approach, called in-network aggregation, is proposed to mitigate the bandwidth bottleneck in clusters by aggregating gradients on programmable hardware (e.g. , Intel Tofino switches). However, existing solutions mainly implement in-network aggregation through fixed (or default) paths, resulting in long communication time. To deal with this issue, we propose GRID, the first-of-its-kind work on gradient routing with in-network aggregation for distributed model training. In the control plane, we present an efficient gradient routing algorithm based on randomized rounding and formally analyze the approximation performance. In the data plane, we realize in-network aggregation by carefully designing the logic of workers and programmable switches. We implement GRID and evaluate its performance on a small-scale testbed consisting of 3 Intel Tofino switches and 9 commodity servers. With a combination of testbed experiments and large-scale simulations, we show that GRID can reduce the communication time by <strong>53.1%-67.6%</strong> and speed up distributed model training by <strong>27.6%-46.5%</strong> compared with state-of-the-art solutions.</p>
+<h2 id="motivation">Motivation</h2>
+<p><img src="fig1.jpg" alt="motivation"></p>
+<p>Consider a distributed training task containing 1 PS and 8 workers. Each link has a bandwidth of 3Gbps. Note that, in practice, the ingress bandwidth of the PS is often larger than that of workers to avoid the communication bottleneck, so we set the ingress bandwidth of the PS to 9Gbps. The processing capacity of programmable switches is 9Gbps.</p>
+<p>Since the PS needs to wait for gradients of all workers to perform global aggregation, we take the minimum gradient sending rate as the critical metric, and the results are shown in Fig. 1. The circle represents the PS. The gray squares and blue rectangles represent workers <span class="markdown-them-math-inline">$W_1$</span> - <span class="markdown-them-math-inline">$W_8$</span> and programmable switches <span class="markdown-them-math-inline">$S_1$</span> - <span class="markdown-them-math-inline">$S_3$</span>, respectively. We use <em>load/capacity</em> to denote the ratio of workload and capacity for programmable switches and links. The solid arrows represent the aggregated gradients, and the dotted arrows represent the non-aggregated gradients sent by workers.</p>
+<p>We first consider the Geryon scheme, which is a classical flow scheduling scheme in distributed training in Fig. 1. It schedules the gradients through different paths according to resource constraints to avoid network congestion. In this case, Geryon schedules the gradient of <span class="markdown-them-math-inline">$W_4$</span> through the path <span class="markdown-them-math-inline">$W_4$</span>-&gt;<span class="markdown-them-math-inline">$S_1$</span>-&gt;<span class="markdown-them-math-inline">$S_2$</span>-&gt;<span class="markdown-them-math-inline">$S_3$</span>-&gt;<span class="markdown-them-math-inline">$PS$</span> to avoid congestion in link <span class="markdown-them-math-inline">$L_1$</span>. Accrodingly, the gradients of workers <span class="markdown-them-math-inline">$W_1$</span>-<span class="markdown-them-math-inline">$W_3$</span> are scheduled through the paths <span class="markdown-them-math-inline">$W_1$</span>-&gt;<span class="markdown-them-math-inline">$S_1$</span>-&gt;<span class="markdown-them-math-inline">$S_3$</span>-&gt;<span class="markdown-them-math-inline">$PS$</span>, <span class="markdown-them-math-inline">$W_2$</span>-&gt;<span class="markdown-them-math-inline">$S_1$</span>-&gt;<span class="markdown-them-math-inline">$S_3$</span>-&gt;<span class="markdown-them-math-inline">$PS$</span> and <span class="markdown-them-math-inline">$W_3$</span>-&gt;<span class="markdown-them-math-inline">$S_1$</span>-&gt;<span class="markdown-them-math-inline">$S_3$</span>-&gt;<span class="markdown-them-math-inline">$PS$</span>, respectively.<br>
+Due to bandwidth constraints of links <span class="markdown-them-math-inline">$L_1$</span> and <span class="markdown-them-math-inline">$L_3$</span>, workers <span class="markdown-them-math-inline">$W_1$</span>-<span class="markdown-them-math-inline">$W_6$</span> will send the gradients with the minimum gradient sending rate of 1Gbps.</p>
+<p>We then consider a state-of-the-art method with in-network aggregation, named ATP, which performs best-effort aggregation. Each worker chooses the nearest programmable switches for in-network aggregation (\ie , <span class="markdown-them-math-inline">$S_1$</span> aggregates <span class="markdown-them-math-inline">$W_1$</span>, <span class="markdown-them-math-inline">$W_2$</span>, <span class="markdown-them-math-inline">$W_3$</span> and <span class="markdown-them-math-inline">$W_4$</span>. <span class="markdown-them-math-inline">$S_2$</span> aggregates <span class="markdown-them-math-inline">$W_5$</span> and <span class="markdown-them-math-inline">$W_6$</span>. <span class="markdown-them-math-inline">$S_3$</span> aggregates <span class="markdown-them-math-inline">$W_7$</span> and <span class="markdown-them-math-inline">$W_8$</span>). If the processing capacity of the programmable switch is exhausted, it will directly transfer the gradients to the PS. In this case, since the processing capacity of <span class="markdown-them-math-inline">$S_1$</span> is 9Gbps, <span class="markdown-them-math-inline">$W_1$</span>-<span class="markdown-them-math-inline">$W_4$</span> can send gradients with the speed of 9/4=2.25Gbps. Moreover, <span class="markdown-them-math-inline">$W_1$</span>-<span class="markdown-them-math-inline">$W_4$</span> can send gradients with the additional speed of 0.75/4=0.18Gbps to the PS, since link <span class="markdown-them-math-inline">$L_1$</span> still has 3-2.25=0.75Gbps available bandwidth. These gradients will be aggregated by <span class="markdown-them-math-inline">$S_3$</span> with available processing capacity. As a result, the minimum gradient sending rate is 2.43Gbps.</p>
 
   
-  <p><a class="classtest-link" href="/tags/distributed-machine-learning/" rel="tag">distributed machine learning</a>, <a class="classtest-link" href="/tags/finished/" rel="tag">finished</a>, <a class="classtest-link" href="/tags/in-network-aggregation/" rel="tag">in-network aggregation</a>, <a class="classtest-link" href="/tags/programmable-switch/" rel="tag">programmable switch</a> — Dec 10, 2021</p>
+  
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+  
+
+  <p><a class="classtest-link" href="../../../../tags/distributed-machine-learning/" rel="tag">distributed machine learning</a>, <a class="classtest-link" href="../../../../tags/finished/" rel="tag">finished</a>, <a class="classtest-link" href="../../../../tags/in-network-aggregation/" rel="tag">in-network aggregation</a>, <a class="classtest-link" href="../../../../tags/programmable-switch/" rel="tag">programmable switch</a> — Dec 10, 2021</p>
   
 
 

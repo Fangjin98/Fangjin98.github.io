@@ -11,13 +11,13 @@
   <meta charset="utf-8">
 
   
-  <title>Devlopment | DayDayUp</title>
+  <title>In-network Aggregation Surveys</title>
   
   <link rel="sitemap" href="https://Fangjin98.github.iositemap.xml" />
   
-  <link rel="canonical" href="https://fangjin98.github.io/2022/04/30/DayDayUp/">
+  <link rel="canonical" href="https://fangjin98.github.io/2022/01/04/INAReview/">
   
-  <meta name="description" content="Estimated release date: 2022.5.31. Estimated release date: 2022.6.31. Published in https://github.com/Fangjin98/DayDayUp     An Easy-To-Use Todo Manag">
+  <meta name="description" content="Reducing the number of gradient transfered by hosts throughput in-network aggregation is studyed by lots of reseachers before. In this post, I will su">
   
   
   <meta name="keywords" content="CS, Computer Networks, Powerlifting">
@@ -28,21 +28,21 @@
   
   <meta property="og:site_name" content="Joey&#39;s Blog" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Devlopment | DayDayUp" />
+  <meta property="og:title" content="In-network Aggregation Surveys" />
   
-  <meta property="og:description" content="Estimated release date: 2022.5.31. Estimated release date: 2022.6.31. Published in https://github.com/Fangjin98/DayDayUp     An Easy-To-Use Todo Manag">
+  <meta property="og:description" content="Reducing the number of gradient transfered by hosts throughput in-network aggregation is studyed by lots of reseachers before. In this post, I will su">
   
-  <meta property="og:url" content="https://fangjin98.github.io/2022/04/30/DayDayUp/" />
+  <meta property="og:url" content="https://fangjin98.github.io/2022/01/04/INAReview/" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Devlopment | DayDayUp">
+  <meta name="twitter:title" content="In-network Aggregation Surveys">
   
-  <meta name="twitter:description" content="Estimated release date: 2022.5.31. Estimated release date: 2022.6.31. Published in https://github.com/Fangjin98/DayDayUp     An Easy-To-Use Todo Manag">
+  <meta name="twitter:description" content="Reducing the number of gradient transfered by hosts throughput in-network aggregation is studyed by lots of reseachers before. In this post, I will su">
   
   
   <meta name="twitter:image" content="https://Fangjin98.github.ioundefined">
   
-  <meta name="twitter:url" content="https://fangjin98.github.io/2022/04/30/DayDayUp/" />
+  <meta name="twitter:url" content="https://fangjin98.github.io/2022/01/04/INAReview/" />
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -184,29 +184,75 @@
 </div>
 
         <div class="trans">
-            <h2>Devlopment | DayDayUp</h2>
+            <h2>In-network Aggregation Surveys</h2>
 
-  <blockquote>
-<p><s>Estimated release date: 2022.5.31.</s><br>
-<s>Estimated release date: 2022.6.31.</s><br>
-Published in <a target="_blank" rel="noopener" href="https://github.com/Fangjin98/DayDayUp">https://github.com/Fangjin98/DayDayUp</a></p>
-</blockquote>
-<p align="center">
-  An Easy-To-Use Todo Manager with Time Estimation Tracking.  
-</p>
-<p align="center"> <img src=1.png alt="screenshot" /> </p>
-<h2 id="motivation">Motivation</h2>
-<p>Time estimation is a key need for todo management. We help you to better estimate the completion time of todos via evidence-based scheduling (EBS). Specifically, we adopt the history duration of finished todos to predict the bias of estimated duration of unfinished todos.</p>
-<h2 id="how-to estimate?">How to Estimate?</h2>
-<p>We first give the defintion of <em>duration</em>, <em>estimated duration</em> and <em>real durations</em>.</p>
+  <p>Reducing the number of gradient transfered by hosts throughput in-network aggregation is studyed by lots of reseachers before. In this post, I will summary the common technologies of in-network aggregation.</p>
+<h2 id="implementing-in-network aggregation through software">Implementing in-network aggregation through software</h2>
 <ol>
-<li><em>duration</em> is the total time to complete a todo. When you completed a todo (pressed the checkbox), the application would calculate the <em>duration</em> by subtracting the creation time from the completion time. Only finished todos have the <em>duration</em>.</li>
-<li><em>estimated duration</em> is set when (after) you create a todo. It is the duration you expect to complete this todo. The <em>estimated duration</em> is set by users for unfinished todos.</li>
-<li><em>real durations</em> are calculated by DayDayUp based on the <em>duration</em> of finished todos. It is a set of values, representing the <em>durations</em> under different probabilities.</li>
+<li>NetAgg: Implement in-network aggregation via switch-attached high-performance middleboxes.</li>
+<li>CamDoop: They use servers in a direct-connect network topology.</li>
 </ol>
-<p>Then we give the definition of <em>bias rate</em> of one finished todo as the <em>estimated duration/duration</em> of it. And the set of <em>bias rates</em> contains all the <em>bias rate</em> of finished todos.</p>
-<p>We adopt Monte Carlo Method to calculate <em>real durations</em> for each todo. For each unfinished todo, we select one <em>bias rate</em> from its set and calculate <em>real duration/bias rate</em>. We repeat the procedure for 100 times, then we obtain the <em>real durations</em> of the unfinished todo.</p>
+<h2 id="implementing-in-network aggregation through hardware">Implementing in-network aggregation through hardware</h2>
+<ol>
+<li>DAIET: Furthermore, it (refer to in-network aggregation) can help reducing network traffic, so as to alleviate congestion, which is a major cause of application performance degradation</li>
+<li>SHARP: Implement in dedicated switches, and the function is programmed in the chip.</li>
+<li>iSwitch: Aiming at asynchronous RL training, which has a much smaller model size than the size of a typical DNN model. Thus, they can store the total model into the memory of programmable switches.</li>
+<li>SwitchML: Using a programmable switch to replace the PS to aggregate the gradients.</li>
+<li>ATP: Using programmable switches. However, they adopt static routing scheme, may leading to poor performance.</li>
+</ol>
+<p><strong>KEYWORDS</strong></p>
+<ul>
+<li>FPGA based programmable switches.</li>
+<li>aggregate the entire gradient vector</li>
+</ul>
+<p><strong>FEATURES</strong></p>
+<ul>
+<li>consider the impact of in-network aggregation to synchronous training and asynchronous training
+<ul>
+<li>Synchronous: reduce end-to-end latency.</li>
+<li>Asynchronous: convergence with faster weight updates.</li>
+</ul>
+</li>
+<li>Hierarchical aggregation at the rack scale.
+<ul>
+<li>The switch will forward the aggregated segment to the switches in the higher level for global aggregation.</li>
+<li>The switch will select the one with the smallest value of IP address among the multiple higher level switches.</li>
+</ul>
+</li>
+<li>The control plane  maintains a member ship table for the current training job.</li>
+<li><strong>Asynchronous training: Local gradient computing, gradient aggregation and weight update can be pipelined.</strong></li>
+</ul>
+<!-- **CHALLENGES**
 
+- Deadlock: the simultaneous and uncoordinated execution of multiple reduction operations may result in several reduction operations waiting for  the same AN resources, allowing none to complete.
+- Fault tolerance:
+    - transport-level errors
+    - end-node errors
+    - protocol errors
+- Floating point numbers should be calculated in a specific order not the arriving order.
+
+**FEATURES**
+
+- Aggregation request header
+    - data type
+    - data size
+    - the number of elements
+    - aggregation operation to be performed (eg. min or sum)
+- performs the aggregation operation *once all the expected requests arrive*.
+
+--- -->
+<!-- ## **SwitchMl**
+
+**CHALLENGES**
+
+- limited memory: solving it by streaming the gradient to aggregate.
+- limited computation: move the floating-point calculation and division execution into workers.
+
+**FEATURES**
+
+- workers using self-clocked scheme to manage the memory of the switch.
+
+**SHORTAGES** -->
   
   
     
@@ -229,7 +275,7 @@ Published in <a target="_blank" rel="noopener" href="https://github.com/Fangjin9
     
   
 
-  <p><a class="classtest-link" href="../../../../tags/C/" rel="tag">C#</a>, <a class="classtest-link" href="../../../../tags/UWP/" rel="tag">UWP</a>, <a class="classtest-link" href="../../../../tags/Windows-App-SDK/" rel="tag">Windows App SDK</a> — Apr 30, 2022</p>
+  <p><a class="classtest-link" href="../../../../tags/paper-reading/" rel="tag">paper reading</a> — Jan 4, 2022</p>
   
 
 
