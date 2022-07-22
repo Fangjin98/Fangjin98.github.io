@@ -9,12 +9,12 @@ tags:
 mathjax: true
 ---
 
-> Submitted to JSAC (2022.4.17).
+> ~~Submitted to JSAC (2022.4.17).~~
+> JSAC: (Rejected) Scores 4 4 4 6 3 3.
 
 ## Abstract
 
 As the scale of distributed model training increases, it brings huge communication overhead in clusters. Some works try to reduce the communication cost through gradient compression or communication scheduling. However, these methods either downgrade the training accuracy or do not reduce the total transmission amount. One promising approach, called in-network aggregation, is proposed to mitigate the bandwidth bottleneck in clusters by aggregating gradients on programmable hardware (e.g. , Intel Tofino switches). However, existing solutions mainly implement in-network aggregation through fixed (or default) paths, resulting in long communication time. To deal with this issue, we propose GRID, the first-of-its-kind work on gradient routing with in-network aggregation for distributed model training. In the control plane, we present an efficient gradient routing algorithm based on randomized rounding and formally analyze the approximation performance. In the data plane, we realize in-network aggregation by carefully designing the logic of workers and programmable switches. We implement GRID and evaluate its performance on a small-scale testbed consisting of 3 Intel Tofino switches and 9 commodity servers. With a combination of testbed experiments and large-scale simulations, we show that GRID can reduce the communication time by **53.1%-67.6%** and speed up distributed model training by **27.6%-46.5%** compared with state-of-the-art solutions.
-
 
 ## Motivation
 
