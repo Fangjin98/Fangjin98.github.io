@@ -2,7 +2,7 @@
 title: Reading Summary of NetHint
 tags:
  - paper reading
- - NSDI' 22
+ - NSDI
 ---
 > Why do we need a white-box network?
 > How to realize a white-box network?
