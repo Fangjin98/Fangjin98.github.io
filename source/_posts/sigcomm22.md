@@ -2,8 +2,8 @@
 title: Summary of SIGCOMM 22
 date: 2022-09-03 13:34:32
 tags:
-    - paper reading
-    - SIGCOMM
+    - Paper Reading
+    - Summary
 ---
 
 [SIGCOMM 22](https://conferences.sigcomm.org/sigcomm/2022/) contains 11 technical sessions and 55 papers are accepted.

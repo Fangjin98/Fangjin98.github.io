@@ -2,14 +2,11 @@
 title: Research | Robust VNF Placement and Request Routing in MEC
 date: 2021-8-1 17:07:02
 tags:
- - finished
- - VNF placement
- - edge computing
+ - Software-Defined Networks
 ---
 
-> INFOCOM22: (Rejected) Scores 3 3 2 1.
-> IWQoS 2022: (Rejected) Scores 3 3 1.
-> SECON 2022: (Rejected) Scores 3 2 2.
+> ~~INFOCOM22: (Rejected) Scores 3 3 2 1.~~
+> ~~IWQoS 2022: (Rejected) Scores 3 3 1.~~
 
 ## Abstract
 

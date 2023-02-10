@@ -1,12 +1,11 @@
 ---
-title: Reading Summary of NetHint
+title: Do We Need a White-box Network? (Reading Summary of NetHint)
+date: 2022-12-10 17:09:56
 tags:
- - paper reading
- - NSDI
+ - Paper Reading
 ---
-> Why do we need a white-box network?
-> How to realize a white-box network?
-> How to utilize a white-box network?
+
+> You can find the paper [here](https://www.usenix.org/conference/nsdi22/presentation/chen-jingrong).
 
 ## Motivation
 

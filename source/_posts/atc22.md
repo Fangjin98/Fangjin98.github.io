@@ -2,8 +2,8 @@
 title: Summary of ATC 22
 date: 2022-09-16 14:03:21
 tags:
-    - paper reading
-    - ATC
+    - Paper Reading
+    - Summary
 ---
 
 [ATC 22](https://www.usenix.org/conference/atc22/technical-sessions) has 18 tracks, and 64 papers are accepted.
