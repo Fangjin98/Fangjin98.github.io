@@ -8,6 +8,10 @@ tags:
 mathjax: true
 ---
 
+> ~~Submitted to JSAC (2022.4.17).~~
+> ~~JSAC: (Rejected) Scores 4 4 4 6 3 3.~~
+> Accepted by ToN (2023.2.9)
+
 ## What is the *Distributed Training*?
 
 A deep neural network (DNN) model consists of multiple network layers, each of which contains a large number of parameters. Training a DNN model requires hundreds of iterations over the dataset to achieve convergence.
@@ -43,7 +47,7 @@ Due to bandwidth constraints of links $L_1$ and $L_3$, workers $W_1$-$W_6$ will 
 
 We then consider Scheme 2, a state-of-the-art method with in-network aggregation. In Scheme 2, Each worker chooses the nearest programmable switches for in-network aggregation. If the processing capacity of the programmable switch is exhausted, it will directly transfer the gradients to the PS. In this case, since the processing capacity of $S_1$ is 9Gbps, $W_1$-$W_4$ can send gradients with the speed of 9/4=2.25Gbps. Moreover, $W_1$-$W_4$ can send gradients with the additional speed of 0.75/4=0.18Gbps to the PS, since link $L_1$ still has 3-2.25=0.75Gbps available bandwidth. These gradients will be aggregated by $S_3$ with available processing capacity. As a result, the minimum gradient sending rate is 2.43Gbps.
 
-### What about Combining Scheme 1 and 2?
+**What if we combine Scheme 1 and 2?**
 
 Scheme 2 has the following shortcomes:
 
@@ -56,9 +60,6 @@ To address this two shortcomes, we present GRID, which performs gradient routing
 2. Due to network dynamics, gradient packets may arrive at programmable switches asynchronously, decreasing the in-network aggregation throughput.
 
 > If you want to know how we address these challeges, please see [here](/pdf/GRID.pdf).
-> ~~Submitted to JSAC (2022.4.17).~~
-> ~~JSAC: (Rejected) Scores 4 4 4 6 3 3.~~
-> Accepted by ToN (2023.2.9)
 
 ## References
 

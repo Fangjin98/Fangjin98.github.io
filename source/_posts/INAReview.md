@@ -1,5 +1,5 @@
 ---
-title: In-network Aggregation Surveys
+title: Survey of  In-network Aggregation
 date: 2022-01-04
 tags:
    - Paper Reading
