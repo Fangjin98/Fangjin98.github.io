@@ -37,5 +37,5 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
   - Benchpress: 209lbs
   - Deadlifting: 352lbs
 - TED translator
-  1. [What's it like to be a robot.](https://www.ted.com/talks/leila_takayama_what_s_it_like_to_be_a_robot#t-2616)
-  2. [You are your data – why you should stop cooperating.](https://www.youtube.com/watch?v=uG7kmUomXog)
+  - [What's it like to be a robot.](https://www.ted.com/talks/leila_takayama_what_s_it_like_to_be_a_robot#t-2616)
+  - [You are your data – why you should stop cooperating.](https://www.youtube.com/watch?v=uG7kmUomXog)
