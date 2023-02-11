@@ -2,7 +2,7 @@
 title: Research | Robust VNF Placement and Request Routing in MEC
 date: 2021-8-1 17:07:02
 tags:
- - Software-Defined Networks
+ - Software-Defined Networking
 ---
 
 > ~~INFOCOM22: (Rejected) Scores 3 3 2 1.~~
