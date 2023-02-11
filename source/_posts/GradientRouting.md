@@ -2,7 +2,7 @@
 title: We Need to Route Gradients for Distributed Training with In-network Aggregation Carefully
 date: 2023-2-10 17:09:56
 tags: 
- - Programmable Networks
+ - Programmable Network
  - Distributed Training
  - In-network Aggregation
 mathjax: true
