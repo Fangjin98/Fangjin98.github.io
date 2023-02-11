@@ -14,7 +14,7 @@ cd blog
 git submodule update --init
 ```
 
-This blog is based on [Hexo](https://hexo.io/zh-cn/index.html) and a fork of [Minima](https://github.com/Fangjin98/hexo-theme-minima). After cloning the repo, run
+This blog is based on [Hexo](https://hexo.io/zh-cn/index.html) and a [fork of Minima](https://github.com/Fangjin98/hexo-theme-minima). After cloning the repo, run
 
 ```shell
 npm install --force
