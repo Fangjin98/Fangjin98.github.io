@@ -13,7 +13,7 @@ mathjax: true
 
 By aggregating gradients in programmable switches, multiple gradients can be reduced to 1 aggregated gradient, thus mitigating the communication overhead. However, the aggregation performance is limited by its on-chip memory size.
 
-## How Do Exsiting Methods Aggregate Gradient in Programmable Switches?
+### How Do Exsiting Methods Aggregate Gradient in Programmable Switches?
 
 Existing solutions adopt the *memory sharing scheme* to conduct in-network aggregation.
 
@@ -27,7 +27,7 @@ Given that the switch memory size is usually smaller than the gradient size, mul
     <img src="2023-02-11T151628.png" alt="memory sharing example" width="60%" alignment="center">
 </p>
 
-## Little On-chip Memory of Programmable Switches Needs More Design for In-network Aggregation
+### Little On-chip Memory of Programmable Switches Needs More Design for In-network Aggregation
 
 The motivation of this work is simple. **Since one switch can not store the entire gradient, what about using multiple switches to store?**
 

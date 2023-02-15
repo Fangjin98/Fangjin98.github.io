@@ -12,7 +12,7 @@ mathjax: true
 > ~~JSAC: (Rejected) Scores 4 4 4 6 3 3.~~
 > Accepted by ToN (2023.2.9)
 
-## What is the *Distributed Training*?
+### What is the *Distributed Training*?
 
 A deep neural network (DNN) model consists of multiple network layers, each of which contains a large number of parameters. Training a DNN model requires hundreds of iterations over the dataset to achieve convergence.
 
@@ -27,7 +27,7 @@ Parameter Server (PS) is a widely-adopted gradient aggregation scheme. In PS, th
 
 Recent studies have shown that the bottleneck in distributed model training is shifting from computing to communication. According to work<sup><a href="#ref1">1</a></sup>, for a DT task training DeepLight on 100Gbps links, $79\%$ of the training time is occupied for communication.
 
-## What Can We Do?
+### What Can We Do?
 
 One intuitive way is to reduce the size of forwarded gradients. Some works reduce the gradient size by gradient compression. But here we introduce another way called **[in-network aggregation](/2022/01/04/INAReview/)**, which utilizes programmable switches to mitigate the communication bottlenack.
 
@@ -61,6 +61,6 @@ To address this two shortcomes, we present GRID, which performs gradient routing
 
 > If you want to know how we address these challeges, please see [here](/pdf/GRID.pdf).
 
-## References
+### References
 
 1. <p name = "ref1"> https://www.usenix.org/conference/nsdi21/presentation/sapio </p>

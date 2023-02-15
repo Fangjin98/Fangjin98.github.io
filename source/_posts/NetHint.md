@@ -7,7 +7,7 @@ tags:
 
 > You can find the paper [here](https://www.usenix.org/conference/nsdi22/presentation/chen-jingrong).
 
-## Motivation
+### Motivation
 
 Due to the emergence of data-intensive applications, the traditional black-box network doesn't suit the needs of cloud tenants and providers. The cloud tenant is unaware of the network characteristics, and the cloud provider is unaware of the application communication semantics and the transfer schedule. This mismatch incurs low performance and efficiency for data-intensive applications.
 
@@ -17,21 +17,21 @@ To address this issue, this paper proposes the NetHint, a mechanism for a cloud 
 2. How to provide this hint at a low cost?
 3. How should applications react to the hint?
 
-## Background
+### Background
 
-### Black-box Network
+#### Black-box Network
 
 Nowadays, black-box network abstraction is a per-VM bandwidth allocation at the end hosts. Therefore, tenants are unaware of the underlying network characteristics and cannot predict their network performance. 
 
 *The authors present an example of Allreduce with 4 VMs in the paper (Sec. 2.1).*
 
-### Data-intensive Applications
+#### Data-intensive Applications
 
 Many distributed data analytics workloads contain network-intensive shuffle phases between different job stages. Given network characteristics, distributed data analytics applications can change their transfer schedules (by changing the task placement) to minimize shuffle completion time.
 
 The black-box nature of the existing networking abstraction and the adaptiveness of data-intensive applications create a mismatch. Data-intensive applications would benefit from more network information from the cloud provider to configure their transfer schedules, but black-box networking hides this information. To address this mismatch, the authors propose the NetHint.
 
-## Overview
+### Overview
 
 The key idea of NetHint is that the provider provides a hint — an *indirect indication* of the underlying network characteristics (e.g., a virtual link-layer topology for a tenant's VMs, number of co-located tenants, network bandwidth utilization) to a cloud tenant.
 
@@ -43,7 +43,7 @@ The network traffic can be measured in the physical switches using network telem
 
 The tenants can make use of the NetHint information via simple scheduling algorithms.
 
-## Others
+### Others
 
 - Sec. 4 illustrate the realization of NetHint.
 - Sec. 5 illustrates how to adapt to NetHint's hints.
