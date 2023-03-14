@@ -31,7 +31,7 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 ## Others
 
-- [DayDayUp](https://github.com/Fangjin98/DayDayUp): an uwp application developed with C#
+- DayDayUp: A Light-weight todo manager with time estimation tracking. [[WinUI 3](https://github.com/Fangjin98/daydayup)] [[UWP](https://github.com/Fangjin98/daydayup-uwp)] [SwiftUI (*in progress*)]
 - Powerlifting amateur
   - Squad: 330lbs
   - Benchpress: 209lbs
