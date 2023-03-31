@@ -8,7 +8,7 @@ tags:
 mathjax: true
 ---
 
-> This work is a continuation of the gradient routing (see this [post](/2023/02/10/GradientRouting/)).
+> This work is a continuation of the gradient routing (see this [post](/2022/08/25/GradientRouting/)).
 > ~~INFOCOM23: (Rejected) Scores 3 3 3.~~
 
 By aggregating gradients in programmable switches, multiple gradients can be reduced to 1 aggregated gradient, thus mitigating the communication overhead. However, the aggregation performance is limited by its on-chip memory size.
