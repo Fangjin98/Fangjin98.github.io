@@ -5,7 +5,7 @@ date: 2021-12-23 16:55:31
 
 I am a PhD student and a part of [USTC Intelligent Network and System Group](https://int-ustc.github.io/index.html) in the Department of Computer Science at University of Science and Technology of China (USTC), supervised by Prof. [Hongli Xu](http://staff.ustc.edu.cn/~xuhongli/) and Dr. [Gongmin Zhao](https://gmzhao-ustc.github.io/). Before that, I received my bachelor's degree from the College of Computer Science and Electronic Engineering, Hunan University (HNU) in 2020.
 
-My research interest lies in the field of *software-defined networking (SDN)*, *distributed training system* and *programmable network*.
+My research interest lies in the field of *programmable network*, *in-network computing* and *distributed training system*.
 
 If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">contact me</a>.
 
