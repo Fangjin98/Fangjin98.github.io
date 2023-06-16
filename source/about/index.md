@@ -18,18 +18,18 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 ### Conference Papers
 
-- **GOAT: Gradient Scheduling with Collaborative In-Network Aggregation for Distributed Training** [[pdf](../pdf/GOAT.pdf)] [[post](/2022/12/02/gradientscheduling/)]
+- *GOAT: Gradient Scheduling with Collaborative In-Network Aggregation for Distributed Training* [[pdf](../pdf/GOAT.pdf)] [[post](/2022/12/02/gradientscheduling/)]
   **Jin Fang**, Gongming Zhao, Hongli Xu, Zhuolong Yu, Bingchen Shen, Liguang Xie
-  *IEEE/ACM International Symposium on Quality of Service (IWQoS)*, 2023
+  IEEE/ACM International Symposium on Quality of Service (**IWQoS**), 2023
 
 ### Journal Papers
 
-- **GRID: Gradient Routing with In-network Aggregation for Distributed Training** [[pdf](../pdf/GRID.pdf)] [[post](/2022/08/25/GradientRouting/)]
+- *GRID: Gradient Routing with In-network Aggregation for Distributed Training* [[pdf](../pdf/GRID.pdf)] [[post](/2022/08/25/GradientRouting/)]
   **Jin Fang**, Gongming Zhao, Hongli Xu, Changbo Wu, Zhuolong Yu
-  *IEEE/ACM Transactions on Networking (ToN)*, 2023
-- **Reveal: Robustness-Aware VNF Placement and Request Scheduling in Edge Clouds** [[post](/2021/08/01/reveal/)]
+  IEEE/ACM Transactions on Networking (**ToN**), 2023
+- *Reveal: Robustness-Aware VNF Placement and Request Scheduling in Edge Clouds* [[post](/2021/08/01/reveal/)]
   **Jin Fang**, Gongming Zhao, Hongli Xu, Huaqing Tu, Haibo Wang
-  *Computer Networks (ComNet)*, 2023
+  Computer Networks (**ComNet**), 2023
 
 ## Patents
 
@@ -42,7 +42,7 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 ## Others
 
-- DayDayUp: A Light-weight todo manager with time estimation tracking. [[WinUI 3](https://github.com/Fangjin98/daydayup)] [[UWP](https://github.com/Fangjin98/daydayup-uwp)] [SwiftUI (*in progress*)]
+- DayDayUp: A Light-weight todo manager with time estimation tracking. [[WinUI 3](https://github.com/Fangjin98/daydayup)] [[UWP](https://github.com/Fangjin98/daydayup-uwp)] [PyQT]
 - Powerlifting amateur
   - Squad: 330lbs
   - Benchpress: 209lbs
