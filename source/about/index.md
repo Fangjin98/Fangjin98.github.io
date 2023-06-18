@@ -39,7 +39,7 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 ## Services
 
 - TA of Advanced Computer Networking (COMP6103P)
-- External reviewer of IEEE JSAC, IEEE TNET, COMNET
+- External reviewer of IEEE JSAC, IEEE TNET, ComNet
 
 ## Others
 
