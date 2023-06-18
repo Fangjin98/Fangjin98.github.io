@@ -18,7 +18,7 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 ### Conference Papers
 
-- **GOAT: Gradient Scheduling with Collaborative In-Network Aggregation for Distributed Training** [[pdf](../pdf/GOAT.pdf)] [[slide](../pdf/goat-slide.pdf)] [[post](/2022/12/02/gradientscheduling/)]
+- *GOAT: Gradient Scheduling with Collaborative In-Network Aggregation for Distributed Training* [[pdf](../pdf/GOAT.pdf)] [[slide](../pdf/goat-slide.pdf)] [[post](/2022/12/02/gradientscheduling/)]
   **Jin Fang**, Gongming Zhao, Hongli Xu, Zhuolong Yu, Bingchen Shen, Liguang Xie
   IEEE/ACM International Symposium on Quality of Service (**IWQoS**), 2023
 
@@ -38,7 +38,7 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 ## Services
 
-- TA of Advanced Computer Networking (COMP6103P), USTC, China, 2022.9-2022.12
+- TA of Advanced Computer Networking (COMP6103P)
 - External reviewer of IEEE JSAC, IEEE TNET, COMNET
 
 ## Others
