@@ -27,7 +27,7 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 - *GRID: Gradient Routing with In-network Aggregation for Distributed Training* [[pdf](../pdf/GRID.pdf)] [[blog](/2022/08/25/GradientRouting/)]
   **Jin Fang**, Gongming Zhao, Hongli Xu, Changbo Wu, Zhuolong Yu
   IEEE/ACM Transactions on Networking (**ToN**), 2023
-- *Reveal: Robustness-Aware VNF Placement and Request Scheduling in Edge Clouds* [[blog](/2021/08/01/reveal/)]
+- *Reveal: Robustness-Aware VNF Placement and Request Scheduling in Edge Clouds* [[pdf](../pdf/reveal.pdf)] [[code](https://github.com/Fangjin98/reveal-src)] [[blog](/2021/08/01/reveal/)]
   **Jin Fang**, Gongming Zhao, Hongli Xu, Huaqing Tu, Haibo Wang
   Computer Networks (**ComNet**), 2023
 
