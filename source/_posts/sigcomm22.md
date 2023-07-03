@@ -20,7 +20,7 @@ tags:
     - Predictable vFabric on Informative Data Plane
     - Using trio: juniper networks' programmable chipset - for emerging in-network applications
     - Thanos: Programmable Multi-Dimensional Table Filters for Line Rate Network Functions (hard core)
-    - Stateful Multi-Pipelined Programmable Switches (same author with the above paper)
+    - Stateful Multi-Pipelined Programmable Switches (same author as the above paper)
     - FAst In-Network GraY Failure Detection for ISPs
 10. Denial of Service Defense and Storage Networks
 11. Host Networking and Video Delivery
