@@ -8,7 +8,7 @@ tags:
 mathjax: true
 ---
 
-> This work is a continuation of the gradient routing (see this [post](/2022/08/25/GradientRouting/)).
+> This work is a continuation of the gradient routing (see this [post](/2022/08/25/grid/)).
 > ~~INFOCOM23: (Rejected) Scores 3 3 3.~~
 > Accepted by IWQoS 23 (5 4 3 3).
 
