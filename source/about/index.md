@@ -48,9 +48,8 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 - DayDayUp: A Light-weight todo manager with time estimation tracking. [[WinUI 3](https://github.com/Fangjin98/daydayup)] [[UWP](https://github.com/Fangjin98/daydayup-uwp)] [PyQT]
 - Powerlifting amateur
-  - Squad: 330lbs
-  - Benchpress: 209lbs
-  - Deadlifting: 352lbs
+  - 2023.8.13: 959 lbs (S: 363lbs, B: 220lbs, D: 374lbs)
+  - 2022.10.1: 891 lbs (S: 330lbs, B: 209lbs, D: 352lbs)
 - TED translator
   - [What's it like to be a robot.](https://www.ted.com/talks/leila_takayama_what_s_it_like_to_be_a_robot#t-2616)
   - [You are your data – why you should stop cooperating.](https://www.youtube.com/watch?v=uG7kmUomXog)
