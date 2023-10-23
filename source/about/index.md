@@ -3,15 +3,15 @@ title: About me
 date: 2021-12-23 16:55:31
 ---
 
-I am a PhD student and a part of [USTC Intelligent Network and System Group](https://int-ustc.github.io/index.html) in the Department of Computer Science at University of Science and Technology of China (USTC), supervised by Prof. [Hongli Xu](http://staff.ustc.edu.cn/~xuhongli/) and Dr. [Gongmin Zhao](https://gmzhao-ustc.github.io/). Before that, I received my bachelor's degree from the College of Computer Science and Electronic Engineering, Hunan University (HNU) in 2020.
+I am a part of [USTC Intelligent Network and System Group](https://int-ustc.github.io/index.html) in the Department of Computer Science at University of Science and Technology of China (**USTC**), supervised by Prof. [Hongli Xu](http://staff.ustc.edu.cn/~xuhongli/) and Prof. [Gongmin Zhao](https://gmzhao-ustc.github.io/). Before that, I received my bachelor's degree from the College of Computer Science and Electronic Engineering, Hunan University (**HNU**) in 2020.
 
-My research interest lies in the field of *programmable network*, *in-network computing* and *distributed training system*. You can view my CV [**here**](../pdf/resume.pdf).
+My research interest lies in the field of *programmable network*, *in-network computing* and *distributed systems*. You can view my CV [**here**](../pdf/resume.pdf).
 
 If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">contact me</a>.
 
 ## Education
 
-- M.S./Ph.D. (2020-present), Computer Science, University of Science and Technology of China, China
+- M.S. (2020-present), Computer Science, University of Science and Technology of China, China
 - B.S. (2016–2020), Computer Science, Hunan University, China
 
 ## Publications
@@ -36,8 +36,8 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 ## Patents
 
-- 一种边缘云系统中的VNF部署调度方法 [Published：CN113961324A]
-- PS架构下基于可编程交换机的梯度调度方法和装置 [Published：CN114900482A]
+- 一种边缘云系统中的VNF部署调度方法 [CN113961324A]
+- PS架构下基于可编程交换机的梯度调度方法和装置 [CN114900482A]
 
 ## Services
 
@@ -46,10 +46,10 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 ## Others
 
-- DayDayUp: A Light-weight todo manager with time estimation tracking. [[WinUI 3](https://github.com/Fangjin98/daydayup)] [[UWP](https://github.com/Fangjin98/daydayup-uwp)] [PyQT]
+- [DayDayUp](https://github.com/Fangjin98/daydayup): A Light-weight todo manager with time estimation tracking.
 - Powerlifting amateur
-  - 2023.8.13: 959 lbs (S: 363lbs, B: 220lbs, D: 374lbs)
-  - 2022.10.1: 891 lbs (S: 330lbs, B: 209lbs, D: 352lbs)
+  - 2023.8.13: **959 lbs** (S: 363lbs, B: 220lbs, D: 374lbs)
+  - 2022.10.1: **891 lbs** (S: 330lbs, B: 209lbs, D: 352lbs)
 - TED translator
   - [What's it like to be a robot.](https://www.ted.com/talks/leila_takayama_what_s_it_like_to_be_a_robot#t-2616)
   - [You are your data – why you should stop cooperating.](https://www.youtube.com/watch?v=uG7kmUomXog)
