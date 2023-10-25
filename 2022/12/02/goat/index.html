@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Minima -->
+  <!-- Hexo theme created by @adisaktijrs -->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+
+  
+  <title>One Switch is Not Enough, What about More Switches?</title>
+  
+  <link rel="sitemap" href="https://Fangjin98.github.iositemap.xml" />
+  
+  <link rel="canonical" href="https://fangjin98.github.io/2022/12/02/goat/">
+  
+  <meta name="description" content="This work is a continuation of the gradient routing (see this post). INFOCOM23: (Rejected) Scores 3 3 3. Accepted by IWQoS 23 (5 4 3 3).  By aggregati">
+  
+  
+  <meta name="keywords" content="CS, Computer Networks, Powerlifting">
+  
+  <meta name="author" content="Joey">
+  
+  <meta property="og:image" content="https://Fangjin98.github.ioundefined">
+  
+  <meta property="og:site_name" content="Joey&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="One Switch is Not Enough, What about More Switches?" />
+  
+  <meta property="og:description" content="This work is a continuation of the gradient routing (see this post). INFOCOM23: (Rejected) Scores 3 3 3. Accepted by IWQoS 23 (5 4 3 3).  By aggregati">
+  
+  <meta property="og:url" content="https://fangjin98.github.io/2022/12/02/goat/" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="One Switch is Not Enough, What about More Switches?">
+  
+  <meta name="twitter:description" content="This work is a continuation of the gradient routing (see this post). INFOCOM23: (Rejected) Scores 3 3 3. Accepted by IWQoS 23 (5 4 3 3).  By aggregati">
+  
+  
+  <meta name="twitter:image" content="https://Fangjin98.github.ioundefined">
+  
+  <meta name="twitter:url" content="https://fangjin98.github.io/2022/12/02/goat/" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Preload fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preload" href="/fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+<link rel="stylesheet" href="../css/normalize.css">
+
+  
+<link rel="stylesheet" href="../css/skeleton.css">
+
+  
+<link rel="stylesheet" href="../css/custom.css">
+
+  
+<link rel="stylesheet" href="../css/prism-dark.css">
+
+  
+<link rel="stylesheet" href="../css/prism-line-numbers.css">
+
+  <!-- User css -->
+  
+  
+<link rel="stylesheet" href="../css/user.css">
+
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
+  a:not(.icon) {
+    text-decoration-color: #0FA0CE;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      #0FA0CE 50%
+    );
+  }
+  blockquote {
+    border-left: 8px solid #0FA0CE;
+  }
+  .nanobar .bar {
+    background: #0FA0CE;
+  }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #0FA0CE;
+    border-color: #0FA0CE;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #0FA0CE;
+  }
+</style>
+
+  <!-- Google Analytics (With Privacy Settings On)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="atom.xml" title="Joey's Blog" type="application/atom+xml">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="row">
+  <div class="two columns" style="max-width: 50px">
+    <h1 class="mt-2 mode">
+      <div onclick=setDarkMode(true) id="darkBtn">☀️</div>
+      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>🌑</div>
+      <script >
+        if (localStorage.getItem('preferredTheme') == 'dark') {
+          setDarkMode(true)
+        }
+        function setDarkMode(isDark) {
+          var darkBtn = document.getElementById('darkBtn')
+          var lightBtn = document.getElementById('lightBtn')
+          if (isDark) {
+            lightBtn.style.display = "block"
+            darkBtn.style.display = "none"
+            localStorage.setItem('preferredTheme', 'dark');
+          } else {
+            lightBtn.style.display = "none"
+            darkBtn.style.display = "block"
+            localStorage.removeItem('preferredTheme');
+          }
+          document.body.classList.toggle("darkmode");
+        }
+      </script>
+    </h1>
+  </div>
+
+  <div class="six columns ml-1">
+    <h1 class="mt-2">
+      Hello World.
+    </h1>
+  </div>
+
+  <div class="twelve columns">
+    <div class="row">
+      <div class="nine columns left">
+        <a href="/">Home</a>
+        
+          
+          <a href="../../../../about" class="ml">About</a>
+          
+        
+          
+          <a href="../../../../archives" class="ml">Posts</a>
+          
+        
+          
+          <a href="../../../../pdf/resume.pdf" class="ml">CV</a>
+          
+        
+        
+          
+            <a href="mailto:Fangjin98@outlook.com" target="_blank" class="ml">Email</a>
+          
+        
+      </div>
+    </div>
+    <hr style="margin-bottom: 2.6rem">
+  </div>
+</div>
+
+        <div class="trans">
+            <h2>One Switch is Not Enough, What about More Switches?</h2>
+
+  <blockquote>
+<p>This work is a continuation of the gradient routing (see this <a href="/2022/08/25/grid/">post</a>).<br>
+<s>INFOCOM23: (Rejected) Scores 3 3 3.</s><br>
+Accepted by IWQoS 23 (5 4 3 3).</p>
+</blockquote>
+<p>By aggregating gradients in programmable switches, multiple gradients can be reduced to 1 aggregated gradient, thus mitigating the communication overhead. However, the aggregation performance is limited by its on-chip memory size.</p>
+<h3 id="how-do exsiting methods aggregate gradient in programmable switches?">How Do Exsiting Methods Aggregate Gradient in Programmable Switches?</h3>
+<p>Existing solutions adopt the <em>memory sharing scheme</em> to conduct in-network aggregation.</p>
+<p>In particular, the switch memory is divided into <span class="markdown-them-math-inline">$N$</span> memory units, each of which can store a part of gradients (i.e., gradient fragments) at a time.</p>
+<p>Correspondingly, the gradient is divided into <span class="markdown-them-math-inline">$M$</span> fragments, <em>each having the same size as the memory unit</em>. When one fragment arrives at a switch, it will be hashed to a specific unit according to its index (e.g., fragment <span class="markdown-them-math-inline">$i$</span> will be hashed to memory unit <span class="markdown-them-math-inline">$i\%N$</span>).</p>
+<p>Given that the switch memory size is usually smaller than the gradient size, multiple gradient fragments will be hashed to the same memory unit. Therefore, <strong>asynchronously arriving fragments may encounter hash collision, degrading the throughput of in-network aggregation</strong>.</p>
+<p style="text-align: center;">
+    <img src="2023-02-11T151628.png" alt="memory sharing example" width="60%" alignment="center">
+</p>
+<h3 id="little-on-chip memory of programmable switches needs more design for in-network aggregation">Little On-chip Memory of Programmable Switches Needs More Design for In-network Aggregation</h3>
+<p>The motivation of this work is simple. <strong>Since one switch can not store the entire gradient, what about using multiple switches to store?</strong></p>
+<p>Given some switches, the traditional way is each switch aggregates a set of workers’ gradients. But we change the way of gradient fragments assignment.</p>
+<p>In practice, one model can be divided into a set of sub-models (e.g., model layers), whose gradient is aggregated independently. Our key idea is to schedule sub-model gradients to multiple switches for collaborative in-network aggregation. This makes programmable switches possible to store all gradients and aggregate asynchronously arriving gradients</p>
+
+  
+  
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+  
+
+  <p><a class="classtest-link" href="../../../../tags/Distributed-Training/" rel="tag">Distributed Training</a>, <a class="classtest-link" href="../../../../tags/In-network-Aggregation/" rel="tag">In-network Aggregation</a>, <a class="classtest-link" href="../../../../tags/Programmable-Network/" rel="tag">Programmable Network</a> — Dec 2, 2022</p>
+
+          
+          
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="/js/nanobar.min.js"></script>
+  <script>
+    var options = {
+      classname: 'nanobar',
+      id: 'myNanobar'
+    };
+    var nanobar = new Nanobar(options);
+    nanobar.go(30);
+    nanobar.go(76);
+    nanobar.go(100);
+  </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>

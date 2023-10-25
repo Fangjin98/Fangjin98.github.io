@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Minima -->
+  <!-- Hexo theme created by @adisaktijrs -->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+
+  
+  <title>Survey of In-network Aggregation</title>
+  
+  <link rel="sitemap" href="https://Fangjin98.github.iositemap.xml" />
+  
+  <link rel="canonical" href="https://fangjin98.github.io/2023/07/03/ina-survey/">
+  
+  <meta name="description" content="In-network aggregation is studied by lots of reseachers, such as  Wenfei Wu at PKU Lin Wang at VU Amsterdam  This post includes a list of related pape">
+  
+  
+  <meta name="keywords" content="CS, Computer Networks, Powerlifting">
+  
+  <meta name="author" content="Joey">
+  
+  <meta property="og:image" content="https://Fangjin98.github.ioundefined">
+  
+  <meta property="og:site_name" content="Joey&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Survey of In-network Aggregation" />
+  
+  <meta property="og:description" content="In-network aggregation is studied by lots of reseachers, such as  Wenfei Wu at PKU Lin Wang at VU Amsterdam  This post includes a list of related pape">
+  
+  <meta property="og:url" content="https://fangjin98.github.io/2023/07/03/ina-survey/" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Survey of In-network Aggregation">
+  
+  <meta name="twitter:description" content="In-network aggregation is studied by lots of reseachers, such as  Wenfei Wu at PKU Lin Wang at VU Amsterdam  This post includes a list of related pape">
+  
+  
+  <meta name="twitter:image" content="https://Fangjin98.github.ioundefined">
+  
+  <meta name="twitter:url" content="https://fangjin98.github.io/2023/07/03/ina-survey/" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Preload fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preload" href="/fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+<link rel="stylesheet" href="../css/normalize.css">
+
+  
+<link rel="stylesheet" href="../css/skeleton.css">
+
+  
+<link rel="stylesheet" href="../css/custom.css">
+
+  
+<link rel="stylesheet" href="../css/prism-dark.css">
+
+  
+<link rel="stylesheet" href="../css/prism-line-numbers.css">
+
+  <!-- User css -->
+  
+  
+<link rel="stylesheet" href="../css/user.css">
+
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
+  a:not(.icon) {
+    text-decoration-color: #0FA0CE;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      #0FA0CE 50%
+    );
+  }
+  blockquote {
+    border-left: 8px solid #0FA0CE;
+  }
+  .nanobar .bar {
+    background: #0FA0CE;
+  }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #0FA0CE;
+    border-color: #0FA0CE;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #0FA0CE;
+  }
+</style>
+
+  <!-- Google Analytics (With Privacy Settings On)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="atom.xml" title="Joey's Blog" type="application/atom+xml">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="row">
+  <div class="two columns" style="max-width: 50px">
+    <h1 class="mt-2 mode">
+      <div onclick=setDarkMode(true) id="darkBtn">☀️</div>
+      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>🌑</div>
+      <script >
+        if (localStorage.getItem('preferredTheme') == 'dark') {
+          setDarkMode(true)
+        }
+        function setDarkMode(isDark) {
+          var darkBtn = document.getElementById('darkBtn')
+          var lightBtn = document.getElementById('lightBtn')
+          if (isDark) {
+            lightBtn.style.display = "block"
+            darkBtn.style.display = "none"
+            localStorage.setItem('preferredTheme', 'dark');
+          } else {
+            lightBtn.style.display = "none"
+            darkBtn.style.display = "block"
+            localStorage.removeItem('preferredTheme');
+          }
+          document.body.classList.toggle("darkmode");
+        }
+      </script>
+    </h1>
+  </div>
+
+  <div class="six columns ml-1">
+    <h1 class="mt-2">
+      Hello World.
+    </h1>
+  </div>
+
+  <div class="twelve columns">
+    <div class="row">
+      <div class="nine columns left">
+        <a href="/">Home</a>
+        
+          
+          <a href="../../../../about" class="ml">About</a>
+          
+        
+          
+          <a href="../../../../archives" class="ml">Posts</a>
+          
+        
+          
+          <a href="../../../../pdf/resume.pdf" class="ml">CV</a>
+          
+        
+        
+          
+            <a href="mailto:Fangjin98@outlook.com" target="_blank" class="ml">Email</a>
+          
+        
+      </div>
+    </div>
+    <hr style="margin-bottom: 2.6rem">
+  </div>
+</div>
+
+        <div class="trans">
+            <h2>Survey of In-network Aggregation</h2>
+
+  <p>In-network aggregation is studied by lots of reseachers, such as</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://wenfei-wu.github.io/">Wenfei Wu</a> at PKU</li>
+<li><a target="_blank" rel="noopener" href="https://linwang.info/">Lin Wang</a> at VU Amsterdam</li>
+</ul>
+<p>This post includes a list of related papers and projects.</p>
+<h3 id="published-in 2023">Published in 2023</h3>
+<p>In this year, some works are proposed to simplify the development and expand the application scenario of in-network aggregation.</p>
+<ul>
+<li>ClickINC: In-network Computing as a Service in Heterogeneous Programmable Data-center Networks, SIGCOMM 23, Wenfei Wu</li>
+<li>NetRPC: Enabling In-Network Computation in Remote Procedure Calls, NSDI 23, Wenfei Wu</li>
+<li>A Generic Service to Provide In-Network Aggregation for Key-Value Streams, ASPLOS 23 (Distinguished Paper Award), Wenfei Wu</li>
+<li><a target="_blank" rel="noopener" href="https://mcanini.github.io/papers/netreduce.asplos23.pdf">In-Network Aggregation with Transport Transparency for Distributed Training</a>, ASPLOS 23, Wenfei Wu</li>
+</ul>
+<p>Additionaly, some works are proposed to improve the performance of in-network aggregation.</p>
+<ul>
+<li>A2TP: Aggregator-aware In-network Aggregation for Multi-tenant Learning, Eurosys 23, Zhaoyi Li at CSU</li>
+</ul>
+<h3 id="published-in 2022">Published in 2022</h3>
+<p>In fact, papers listed below do not strictly relate to in-network <strong>aggregation</strong>. They either discuss the performance of novel programmable chip under INA workloads (trio) or propose works on running tasks related to DNN with programmable switches.</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/3544216.3544262">Using trio: juniper networks’ programmable chipset - for emerging in-network applications</a>, SIGCOMM 22, Mingran Yang at MIT</li>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2002.08987.pdf">Taurus: a data plane architecture for per-packet ML</a>: ASPLOS 22, Tushar Swamy at Stanford: Proposing a FPGA-based prototype to run per packet inference at programmable switches</li>
+<li><a target="_blank" rel="noopener" href="https://linwang.info/papers/ton22-hire.pdf">Holistic Resource Scheduling for Data Center In-Network Computing</a>,TON , Lin Wang group</li>
+<li><a target="_blank" rel="noopener" href="https://linwang.info/papers/europ422-p4dnn.pdf">Distributed DNN Serving in the Network Data Plane</a>, EuroP4 22, Lin Wang group</li>
+</ul>
+<h3 id="published-in 2021">Published in 2021</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.usenix.org/conference/nsdi21/presentation/lao">ATP: In-network Aggregation for Multi-tenant Learning</a>, NSDI 21 (<strong>best paper award</strong>), Wenfei Wu group</li>
+<li><a target="_blank" rel="noopener" href="https://www.usenix.org/conference/nsdi21/presentation/sapio">Scaling Distributed Machine Learning with In-Network Aggregation</a>, NSDI 21, Microsoft: This work was proposed in 2019, focusing on in-network aggregation with one switch</li>
+<li><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9664035">In-Network Aggregation for Privacy-Preserving Federated Learning</a>, ICT-DM 2021: Performing federated learning with in-network aggregation</li>
+<li><a target="_blank" rel="noopener" href="https://people.csail.mit.edu/ghobadi/papers/panama.pdf">In-network Aggregation for Shared Machine Learning Clusters</a>, MLSys 2021, Manya Ghobadi at MIT: Focusing on routing protocol with in-network aggregation</li>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2107.13694.pdf">P4COM: In-Network Computation with Programmable Switches</a>, Arxiv, Ge Chen at Alibaba</li>
+</ul>
+<p>Some papers focus on improving peformance of in-network <strong>computing</strong> from resource scheduling or programming language.</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://linwang.info/papers/asplos21-hire.pdf">Switches for HIRE: Resource Scheduling for Data Center In-Network Computing</a>, ASPLOS 21, Lin Wang group</li>
+<li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/3484266.3487395">Don’t You Worry 'Bout a Packet: Unified Programming for In-Network Computing</a>, HotNets 21, Lin Wang group</li>
+</ul>
+<h3 id="published-in 2019">Published in 2019</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://jianh.web.engr.illinois.edu/platformx/papers/iswitch-isca2019.pdf">Accelerating Distributed Reinforcement Learning with In-Switch Computing</a>: ISCA 19, Youjie Li at UIUC</li>
+</ul>
+<h3 id="eariler">Eariler</h3>
+<ul>
+<li>DAIET: a system for data aggregation inside the network, SoCC 17: Preliminary work of SwitchML</li>
+<li><a target="_blank" rel="noopener" href="https://network.nvidia.com/related-docs/solutions/hpc/paperieee_copyright.pdf">Scalable Hierarchical Aggregation Protocol (SHArP): A Hardware Architecture for Efficient Data Reduction</a>,COMHPC 16, NVIDIA: Proposing a dedicated switch architecture to perform in-network aggregation (reduction)</li>
+<li><a target="_blank" rel="noopener" href="https://conferences.sigcomm.org/co-next/2014/CoNEXT_papers/p249.pdf">NetAgg: Using Middleboxes for Application-specific On-path Aggregation in Data Centres</a>, CoNEXT 14: Implement in-network aggregation via switch-attached high-performance middleboxes</li>
+<li>Camdoop: Exploiting In-network Aggregation for Big Data Applications, NSDI 12: They use servers in a direct-connect network topology to perform in-network aggregation</li>
+</ul>
+<h3 id="open-sourced codes">Open Sourced Codes</h3>
+<p>Some useful codes for p4 beginners.</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/p4lang/p4app-switchML">Source codes of SwitchML</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Princeton-Cabernet/p4-projects">https://github.com/Princeton-Cabernet/p4-projects</a></li>
+</ul>
+
+  
+  
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+  
+
+  <p><a class="classtest-link" href="../../../../tags/In-network-Aggregation/" rel="tag">In-network Aggregation</a>, <a class="classtest-link" href="../../../../tags/Paper-Reading/" rel="tag">Paper Reading</a>, <a class="classtest-link" href="../../../../tags/Summary/" rel="tag">Summary</a> — Jul 3, 2023</p>
+
+          
+          
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="/js/nanobar.min.js"></script>
+  <script>
+    var options = {
+      classname: 'nanobar',
+      id: 'myNanobar'
+    };
+    var nanobar = new Nanobar(options);
+    nanobar.go(30);
+    nanobar.go(76);
+    nanobar.go(100);
+  </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>

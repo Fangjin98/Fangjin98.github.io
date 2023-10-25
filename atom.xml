@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Joey&#39;s Blog</title>
+  <icon>https://fangjin98.github.io/icon.png</icon>
+  
+  <link href="https://fangjin98.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://fangjin98.github.io/"/>
+  <updated>2023-07-06T08:36:33.203Z</updated>
+  <id>https://fangjin98.github.io/</id>
+  
+  <author>
+    <name>Joey</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Survey of In-network Aggregation</title>
+    <link href="https://fangjin98.github.io/2023/07/03/ina-survey/"/>
+    <id>https://fangjin98.github.io/2023/07/03/ina-survey/</id>
+    <published>2023-07-02T16:00:00.000Z</published>
+    <updated>2023-07-06T08:36:33.203Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;In-network aggregation is studied by lots of reseachers, such as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://wenfei-wu.github.io/&quot;&gt;Wenfei Wu&lt;/a&gt; at</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Paper Reading" scheme="https://fangjin98.github.io/tags/Paper-Reading/"/>
+    
+    <category term="Summary" scheme="https://fangjin98.github.io/tags/Summary/"/>
+    
+    <category term="In-network Aggregation" scheme="https://fangjin98.github.io/tags/In-network-Aggregation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Summary of NSDI 23</title>
+    <link href="https://fangjin98.github.io/2023/06/09/nsdi23/"/>
+    <id>https://fangjin98.github.io/2023/06/09/nsdi23/</id>
+    <published>2023-06-09T03:18:35.000Z</published>
+    <updated>2023-07-06T08:36:33.203Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.usenix.org/conference/nsdi23&quot;&gt;NSDI 23&lt;/a&gt; has 24 technical</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Paper Reading" scheme="https://fangjin98.github.io/tags/Paper-Reading/"/>
+    
+    <category term="Summary" scheme="https://fangjin98.github.io/tags/Summary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搬运 | 科研路上，我为什么离不开 Joplin</title>
+    <link href="https://fangjin98.github.io/2023/05/05/ssp-joplin-intro/"/>
+    <id>https://fangjin98.github.io/2023/05/05/ssp-joplin-intro/</id>
+    <published>2023-05-05T13:45:08.000Z</published>
+    <updated>2023-06-16T02:25:53.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;em&gt;原文首次发表于&lt;a href=&quot;https://sspai.com/post/77020&quot;&gt;少数派&lt;/a&gt;(2022.12.05)。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;2023-05-06T152339.png&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="sspai" scheme="https://fangjin98.github.io/tags/sspai/"/>
+    
+    <category term="Chinese" scheme="https://fangjin98.github.io/tags/Chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Do We Need a White-box Network? (Reading Summary of NetHint)</title>
+    <link href="https://fangjin98.github.io/2022/12/10/nsdi22-nethint/"/>
+    <id>https://fangjin98.github.io/2022/12/10/nsdi22-nethint/</id>
+    <published>2022-12-10T09:09:56.000Z</published>
+    <updated>2023-07-06T08:36:33.203Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;You can find the paper &lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Paper Reading" scheme="https://fangjin98.github.io/tags/Paper-Reading/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>One Switch is Not Enough, What about More Switches?</title>
+    <link href="https://fangjin98.github.io/2022/12/02/goat/"/>
+    <id>https://fangjin98.github.io/2022/12/02/goat/</id>
+    <published>2022-12-02T06:35:22.000Z</published>
+    <updated>2023-07-06T08:36:33.201Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;This work is a continuation of the gradient routing (see this &lt;a href=&quot;/2022/08/25/grid/&quot;&gt;post&lt;/a&gt;).&lt;br&gt;
+&lt;s&gt;INFOCOM23:</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Programmable Network" scheme="https://fangjin98.github.io/tags/Programmable-Network/"/>
+    
+    <category term="Distributed Training" scheme="https://fangjin98.github.io/tags/Distributed-Training/"/>
+    
+    <category term="In-network Aggregation" scheme="https://fangjin98.github.io/tags/In-network-Aggregation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Summary of ATC 22</title>
+    <link href="https://fangjin98.github.io/2022/09/16/atc22/"/>
+    <id>https://fangjin98.github.io/2022/09/16/atc22/</id>
+    <published>2022-09-16T06:03:21.000Z</published>
+    <updated>2023-02-15T04:57:26.733Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.usenix.org/conference/atc22/technical-sessions&quot;&gt;ATC 22&lt;/a&gt; has 18 tracks, and 64 papers are</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Paper Reading" scheme="https://fangjin98.github.io/tags/Paper-Reading/"/>
+    
+    <category term="Summary" scheme="https://fangjin98.github.io/tags/Summary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Summary of SIGCOMM 22</title>
+    <link href="https://fangjin98.github.io/2022/09/03/sigcomm22/"/>
+    <id>https://fangjin98.github.io/2022/09/03/sigcomm22/</id>
+    <published>2022-09-03T05:34:32.000Z</published>
+    <updated>2023-07-06T08:36:33.203Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://conferences.sigcomm.org/sigcomm/2022/&quot;&gt;SIGCOMM 22&lt;/a&gt; contains 11 technical sessions and 55 papers are</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Paper Reading" scheme="https://fangjin98.github.io/tags/Paper-Reading/"/>
+    
+    <category term="Summary" scheme="https://fangjin98.github.io/tags/Summary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>We Need to Route Gradients for Distributed Training with In-network Aggregation Carefully</title>
+    <link href="https://fangjin98.github.io/2022/08/25/grid/"/>
+    <id>https://fangjin98.github.io/2022/08/25/grid/</id>
+    <published>2022-08-25T09:09:56.000Z</published>
+    <updated>2023-07-06T08:36:33.202Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;s&gt;Submitted to JSAC (2022.4.17).&lt;/s&gt;&lt;br&gt;
+&lt;s&gt;JSAC: (Rejected) Scores 4 4 4 6 3 3.&lt;/s&gt;&lt;br&gt;
+Accepted by ToN</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Programmable Network" scheme="https://fangjin98.github.io/tags/Programmable-Network/"/>
+    
+    <category term="Distributed Training" scheme="https://fangjin98.github.io/tags/Distributed-Training/"/>
+    
+    <category term="In-network Aggregation" scheme="https://fangjin98.github.io/tags/In-network-Aggregation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Robustness-aware VNF Placement and Request Scheduling in Edge Cloud</title>
+    <link href="https://fangjin98.github.io/2021/08/01/reveal/"/>
+    <id>https://fangjin98.github.io/2021/08/01/reveal/</id>
+    <published>2021-08-01T09:07:02.000Z</published>
+    <updated>2023-06-16T02:29:12.941Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;s&gt;INFOCOM22: (Rejected) Scores 3 3 2 1&lt;/s&gt;&lt;br&gt;
+&lt;s&gt;IWQoS 2022: (Rejected) Scores 3 3 1&lt;/s&gt;&lt;br&gt;
+Accepted by ComNet</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Software-Defined Networking" scheme="https://fangjin98.github.io/tags/Software-Defined-Networking/"/>
+    
+  </entry>
+  
+</feed>

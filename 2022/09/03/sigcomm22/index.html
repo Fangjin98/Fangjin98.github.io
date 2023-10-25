@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Minima -->
+  <!-- Hexo theme created by @adisaktijrs -->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+
+  
+  <title>Summary of SIGCOMM 22</title>
+  
+  <link rel="sitemap" href="https://Fangjin98.github.iositemap.xml" />
+  
+  <link rel="canonical" href="https://fangjin98.github.io/2022/09/03/sigcomm22/">
+  
+  <meta name="description" content="SIGCOMM 22 contains 11 technical sessions and 55 papers are accepted.  Datacenter Networking 5G Networks Congestion Control Wide Area Networks Testing">
+  
+  
+  <meta name="keywords" content="CS, Computer Networks, Powerlifting">
+  
+  <meta name="author" content="Joey">
+  
+  <meta property="og:image" content="https://Fangjin98.github.ioundefined">
+  
+  <meta property="og:site_name" content="Joey&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Summary of SIGCOMM 22" />
+  
+  <meta property="og:description" content="SIGCOMM 22 contains 11 technical sessions and 55 papers are accepted.  Datacenter Networking 5G Networks Congestion Control Wide Area Networks Testing">
+  
+  <meta property="og:url" content="https://fangjin98.github.io/2022/09/03/sigcomm22/" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Summary of SIGCOMM 22">
+  
+  <meta name="twitter:description" content="SIGCOMM 22 contains 11 technical sessions and 55 papers are accepted.  Datacenter Networking 5G Networks Congestion Control Wide Area Networks Testing">
+  
+  
+  <meta name="twitter:image" content="https://Fangjin98.github.ioundefined">
+  
+  <meta name="twitter:url" content="https://fangjin98.github.io/2022/09/03/sigcomm22/" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Preload fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preload" href="/fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+<link rel="stylesheet" href="../css/normalize.css">
+
+  
+<link rel="stylesheet" href="../css/skeleton.css">
+
+  
+<link rel="stylesheet" href="../css/custom.css">
+
+  
+<link rel="stylesheet" href="../css/prism-dark.css">
+
+  
+<link rel="stylesheet" href="../css/prism-line-numbers.css">
+
+  <!-- User css -->
+  
+  
+<link rel="stylesheet" href="../css/user.css">
+
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
+  a:not(.icon) {
+    text-decoration-color: #0FA0CE;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      #0FA0CE 50%
+    );
+  }
+  blockquote {
+    border-left: 8px solid #0FA0CE;
+  }
+  .nanobar .bar {
+    background: #0FA0CE;
+  }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #0FA0CE;
+    border-color: #0FA0CE;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #0FA0CE;
+  }
+</style>
+
+  <!-- Google Analytics (With Privacy Settings On)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="atom.xml" title="Joey's Blog" type="application/atom+xml">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="row">
+  <div class="two columns" style="max-width: 50px">
+    <h1 class="mt-2 mode">
+      <div onclick=setDarkMode(true) id="darkBtn">☀️</div>
+      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>🌑</div>
+      <script >
+        if (localStorage.getItem('preferredTheme') == 'dark') {
+          setDarkMode(true)
+        }
+        function setDarkMode(isDark) {
+          var darkBtn = document.getElementById('darkBtn')
+          var lightBtn = document.getElementById('lightBtn')
+          if (isDark) {
+            lightBtn.style.display = "block"
+            darkBtn.style.display = "none"
+            localStorage.setItem('preferredTheme', 'dark');
+          } else {
+            lightBtn.style.display = "none"
+            darkBtn.style.display = "block"
+            localStorage.removeItem('preferredTheme');
+          }
+          document.body.classList.toggle("darkmode");
+        }
+      </script>
+    </h1>
+  </div>
+
+  <div class="six columns ml-1">
+    <h1 class="mt-2">
+      Hello World.
+    </h1>
+  </div>
+
+  <div class="twelve columns">
+    <div class="row">
+      <div class="nine columns left">
+        <a href="/">Home</a>
+        
+          
+          <a href="../../../../about" class="ml">About</a>
+          
+        
+          
+          <a href="../../../../archives" class="ml">Posts</a>
+          
+        
+          
+          <a href="../../../../pdf/resume.pdf" class="ml">CV</a>
+          
+        
+        
+          
+            <a href="mailto:Fangjin98@outlook.com" target="_blank" class="ml">Email</a>
+          
+        
+      </div>
+    </div>
+    <hr style="margin-bottom: 2.6rem">
+  </div>
+</div>
+
+        <div class="trans">
+            <h2>Summary of SIGCOMM 22</h2>
+
+  <p><a target="_blank" rel="noopener" href="https://conferences.sigcomm.org/sigcomm/2022/">SIGCOMM 22</a> contains 11 technical sessions and 55 papers are accepted.</p>
+<ol>
+<li><em>Datacenter Networking</em></li>
+<li>5G Networks</li>
+<li>Congestion Control</li>
+<li>Wide Area Networks</li>
+<li><em>Testing and Verification</em> (most of them mentioned programmable dataplane)</li>
+<li>Machine Learning</li>
+<li><em>Monitoring and Measurement</em></li>
+<li>Sensing and Wireless Communication</li>
+<li><em>Programmable Data Planes</em>
+<ul>
+<li>Predictable vFabric on Informative Data Plane</li>
+<li>Using trio: juniper networks’ programmable chipset - for emerging in-network applications</li>
+<li>Thanos: Programmable Multi-Dimensional Table Filters for Line Rate Network Functions (hard core)</li>
+<li>Stateful Multi-Pipelined Programmable Switches (same author as the above paper)</li>
+<li>FAst In-Network GraY Failure Detection for ISPs</li>
+</ul>
+</li>
+<li>Denial of Service Defense and Storage Networks</li>
+<li>Host Networking and Video Delivery</li>
+</ol>
+<h3 id="interested-papers">Interested Papers</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://research.google/pubs/pub51587/">Jupiter Evolving: Transforming Google’s Datacenter Network via Optical Circuit Switches and Software-Defined Networking</a></li>
+<li><a target="_blank" rel="noopener" href="https://yiwenzhang92.github.io/assets/docs/aequitas-sigcomm22.pdf">Aequitas: Admission Control for Performance-Critical RPCs in Datacenters</a>: Targeting guarteeing SLO of RPCs</li>
+<li><a target="_blank" rel="noopener" href="https://liangchengyu.com/doc/cebinae-sigcomm2022.pdf">Cebinae: Scalable In-network Fairness Augmentation</a>: Enabling the fairness among different congestion control protocols with programmable switches</li>
+<li><a target="_blank" rel="noopener" href="https://yangtonghome.github.io/uploads/sigcomm22-flyMon-final220.pdf">FlyMon: Enabling On-the-Fly Task Reconfiguration for Network Measurement</a>: Sketch-based measurement system that can make on-the-fly reconfigurations on a large set of measurement tasks</li>
+<li><a target="_blank" rel="noopener" href="https://research.protocol.ai/publications/design-and-evaluation-of-ipfs-a-storage-layer-for-the-decentralized-web/trautwein2022.pdf">Design and Evaluation of IPFS: A Storage Layer for the Decentralized Web</a>: Illustrating the implementation of IPFS, the largest and most widely used Decentralized Web platform</li>
+<li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/3544216.3544262">Using trio: juniper networks’ programmable chipset - for emerging in-network applications</a>：Mentioned INA</li>
+</ul>
+<h3 id="jupiter-evolving: transforming google’s datacenter network via optical circuit switches and software-defined networking">Jupiter Evolving: Transforming Google’s Datacenter Network via Optical Circuit Switches and Software-Defined Networking</h3>
+<p>Google proposed a new datacenter architecture in this paper.</p>
+<ul>
+<li>A datacenter  interconnection layer</li>
+<li>Centralized SDN controller for traffic engineering</li>
+<li>Automated network operations for topology engineering</li>
+</ul>
+<p>The combination of traffic and topology engineering  on direct-connect fabrics achieves simliar throughput as Clos fabrics for Google’s production traffic patterns.</p>
+<p>The paper targets the challenge of <em>incremental refresh</em> of the network infrastructure. Since the typical Clos network requires pre-building spine at the maximum-scale, which may derated the bandiwidth of links to aggregation block.</p>
+<ol>
+<li>spine层一旦建好，难以修改，因为这需要很大的成本</li>
+<li>spine层的带宽会限制后续更新的其他模块带宽，造成计算和网络资源失配</li>
+</ol>
+<p>为了解决Clos架构难以增量更新的问题，这篇论文提出了一个新的架构，包含对应的网络管理，流量和拓扑工程。该架构能够在流量不确定，集群异构的场景下工作。</p>
+<h3 id="aequitas:-admission control for performance-critical rpcs in datacenters">Aequitas: Admission Control for Performance-Critical RPCs in Datacenters</h3>
+<p>Another paper of Google, targeting guarteeing SLO of RPCs.</p>
+<p>Traditional traffic classification categories cannot sufficiently capture their importance due to wide variations in RPC characteristics.</p>
+<p>As of 2021, <em>RPCs generate 95%+ of the application traffic in Google production datacenters</em>, of which ∼75% is to and from storage systems.</p>
+<p>An RPC is a programmatic request for action or information between components of applications, and it can consist of dozens of individual packets. Hundreds of RPCs can be on the critical path to completing an application-level operation.</p>
+<h3 id="cebinae:-scalable in-network fairness augmentation">Cebinae: Scalable In-network Fairness Augmentation</h3>
+<p>Enabling the fairness among different congestion control protocols with programmable switches.</p>
+<p>现有拥塞控制协议的多样性会导致租户资源占用不公平，Cebinae通过惩罚超过max-min份额的流，增强现有网络。</p>
+<p>Key insights</p>
+<ol>
+<li>High-level flow scheduling is enough: &gt; it suffices for the network to redistribute bandwidth from flows that have met/exceeded their fair share to flows that have not.</li>
+<li>Advanced scheduling logic can be adopted based on the above simplification.</li>
+</ol>
+<p>Open sourced in <a target="_blank" rel="noopener" href="https://github.com/eniac/Cebinae">https://github.com/eniac/Cebinae</a></p>
+<h3 id="flymon:-enabling on-the-fly task reconfiguration for network measurement">FlyMon: Enabling On-the-Fly Task Reconfiguration for Network Measurement</h3>
+<p>一作是南大，三作是北大杨仝。</p>
+<p>Sketch-based measurement system that can make on-the-fly reconfigurations on a large set of measurement tasks.</p>
+<blockquote>
+<p>This paper may be useful for my future research.</p>
+</blockquote>
+
+  
+  
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+  
+
+  <p><a class="classtest-link" href="../../../../tags/Paper-Reading/" rel="tag">Paper Reading</a>, <a class="classtest-link" href="../../../../tags/Summary/" rel="tag">Summary</a> — Sep 3, 2022</p>
+
+          
+          
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="/js/nanobar.min.js"></script>
+  <script>
+    var options = {
+      classname: 'nanobar',
+      id: 'myNanobar'
+    };
+    var nanobar = new Nanobar(options);
+    nanobar.go(30);
+    nanobar.go(76);
+    nanobar.go(100);
+  </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
