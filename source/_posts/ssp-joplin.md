@@ -1,5 +1,5 @@
 ---
-title: 搬运 | 科研路上，我为什么离不开 Joplin
+title: 科研路上，我为什么离不开 Joplin
 date: 2023-05-05 21:45:08
 tags:
  - sspai
