@@ -1,20 +1,23 @@
 ---
-title: Survey of In-network Aggregation
+title: In-network Aggregation Research
 date: 2023-07-03
 tags:
-   - Paper Reading
-   - Summary
-   - In-network Aggregation
+  - Summary
 ---
 
-In-network aggregation is studied by lots of reseachers, such as 
+### Representative Groups
 
-- [Wenfei Wu](http://wenfei-wu.github.io/) at PKU
-- [Lin Wang](https://linwang.info/) at VU Amsterdam
+- [Wenfei Wu](http://wenfei-wu.github.io/)
+- [Lin Wang](https://linwang.info/)
 
-This post includes a list of related papers and projects.
+### Open Sourced Codes
 
-### Published in 2023
+- [SwitchML](https://github.com/p4lang/p4app-switchML)
+- [Open source P4 implementations](https://github.com/Princeton-Cabernet/p4-projects)
+
+### Paper List
+
+#### Published in 2023
 
 In this year, some works are proposed to simplify the development and expand the application scenario of in-network aggregation.
 
@@ -27,16 +30,16 @@ Additionaly, some works are proposed to improve the performance of in-network ag
 
 - A2TP: Aggregator-aware In-network Aggregation for Multi-tenant Learning, Eurosys 23, Zhaoyi Li at CSU
 
-### Published in 2022
+#### Published in 2022
 
-In fact, papers listed below do not strictly relate to in-network **aggregation**. They either discuss the performance of novel programmable chip under INA workloads (trio) or propose works on running tasks related to DNN with programmable switches.
+In fact, papers listed below do not strictly relate to in-network **aggregation**. They either discuss the performance of novel programmable chip under INA workloads (Trio) or propose works on running tasks related to DNN with programmable switches.
 
 - [Using trio: juniper networks' programmable chipset - for emerging in-network applications](https://dl.acm.org/doi/pdf/10.1145/3544216.3544262), SIGCOMM 22, Mingran Yang at MIT
 - [Taurus: a data plane architecture for per-packet ML](https://arxiv.org/pdf/2002.08987.pdf): ASPLOS 22, Tushar Swamy at Stanford: Proposing a FPGA-based prototype to run per packet inference at programmable switches
 - [Holistic Resource Scheduling for Data Center In-Network Computing](https://linwang.info/papers/ton22-hire.pdf),TON , Lin Wang group
 - [Distributed DNN Serving in the Network Data Plane](https://linwang.info/papers/europ422-p4dnn.pdf), EuroP4 22, Lin Wang group
 
-### Published in 2021
+#### Published in 2021
 
 - [ATP: In-network Aggregation for Multi-tenant Learning](https://www.usenix.org/conference/nsdi21/presentation/lao), NSDI 21 (**best paper award**), Wenfei Wu group
 - [Scaling Distributed Machine Learning with In-Network Aggregation](https://www.usenix.org/conference/nsdi21/presentation/sapio), NSDI 21, Microsoft: This work was proposed in 2019, focusing on in-network aggregation with one switch
@@ -49,20 +52,13 @@ Some papers focus on improving peformance of in-network **computing** from resou
 - [Switches for HIRE: Resource Scheduling for Data Center In-Network Computing](https://linwang.info/papers/asplos21-hire.pdf), ASPLOS 21, Lin Wang group
 - [Don't You Worry 'Bout a Packet: Unified Programming for In-Network Computing](https://dl.acm.org/doi/pdf/10.1145/3484266.3487395), HotNets 21, Lin Wang group
 
-### Published in 2019
+#### Published in 2019
 
 - [Accelerating Distributed Reinforcement Learning with In-Switch Computing](http://jianh.web.engr.illinois.edu/platformx/papers/iswitch-isca2019.pdf): ISCA 19, Youjie Li at UIUC
 
-### Eariler
+#### Eariler
 
 - DAIET: a system for data aggregation inside the network, SoCC 17: Preliminary work of SwitchML
 - [Scalable Hierarchical Aggregation Protocol (SHArP): A Hardware Architecture for Efficient Data Reduction](https://network.nvidia.com/related-docs/solutions/hpc/paperieee_copyright.pdf),COMHPC 16, NVIDIA: Proposing a dedicated switch architecture to perform in-network aggregation (reduction)
 - [NetAgg: Using Middleboxes for Application-specific On-path Aggregation in Data Centres](https://conferences.sigcomm.org/co-next/2014/CoNEXT_papers/p249.pdf), CoNEXT 14: Implement in-network aggregation via switch-attached high-performance middleboxes
 - Camdoop: Exploiting In-network Aggregation for Big Data Applications, NSDI 12: They use servers in a direct-connect network topology to perform in-network aggregation
-
-### Open Sourced Codes
-
-Some useful codes for p4 beginners.
-
-- [Source codes of SwitchML](https://github.com/p4lang/p4app-switchML)
-- https://github.com/Princeton-Cabernet/p4-projects
