@@ -11,7 +11,7 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 ## Education
 
-- M.S. (2020-present), Computer Science, University of Science and Technology of China, China
+- Ph.D. (2020-present), Computer Science, University of Science and Technology of China, China
 - B.S. (2016–2020), Computer Science, Hunan University, China
 
 ## Publications
@@ -21,14 +21,14 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 - *GOAT: Gradient Scheduling with Collaborative In-Network Aggregation for Distributed Training* 
   **Jin Fang**, Gongming Zhao, Hongli Xu, Zhuolong Yu, Bingchen Shen, Liguang Xie
   IEEE/ACM International Symposium on Quality of Service (**IWQoS**), 2023
-  [[pdf](../pdf/GOAT.pdf)] [[slide](../pdf/goat-slide.pdf)] [[video](https://youtu.be/aYkok2JVDqk)] [[blog](/2022/12/02/goat/)]
+  [[pdf](../pdf/goat.pdf)] [[slide](../pdf/goat-slide.pdf)] [[video](https://youtu.be/aYkok2JVDqk)] [[blog](/2022/12/02/goat/)]
 
 ### Journal Papers
 
 - *GRID: Gradient Routing with In-network Aggregation for Distributed Training* 
   **Jin Fang**, Gongming Zhao, Hongli Xu, Changbo Wu, Zhuolong Yu
   IEEE/ACM Transactions on Networking (**ToN**), 2023
-  [[pdf](../pdf/GRID.pdf)] [[blog](/2022/08/25/grid/)]
+  [[pdf](../pdf/grid.pdf)] [[blog](/2022/08/25/grid/)]
 - *Reveal: Robustness-Aware VNF Placement and Request Scheduling in Edge Clouds* 
   **Jin Fang**, Gongming Zhao, Hongli Xu, Huaqing Tu, Haibo Wang
   Computer Networks (**ComNet**), 2023
