@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Minima -->
+  <!-- Hexo theme created by @adisaktijrs -->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+
+  
+  <title>Fault Injection Research</title>
+  
+  <link rel="sitemap" href="https://Fangjin98.github.iositemap.xml" />
+  
+  <link rel="canonical" href="https://fangjin98.github.io/2023/12/21/fi/">
+  
+  <meta name="description" content="Existing Works  故障演练 Chaos 火山引擎混沌工程之云原生场景实现 字节跳动异构场景下的高可用建设实践 AWS FIS  AWS Fault Injection Simulator Can select the target _figures by type, tag, ARN,">
+  
+  
+  <meta name="keywords" content="CS, Computer Networks, Powerlifting">
+  
+  <meta name="author" content="Joey">
+  
+  <meta property="og:image" content="https://Fangjin98.github.ioundefined">
+  
+  <meta property="og:site_name" content="Joey&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Fault Injection Research" />
+  
+  <meta property="og:description" content="Existing Works  故障演练 Chaos 火山引擎混沌工程之云原生场景实现 字节跳动异构场景下的高可用建设实践 AWS FIS  AWS Fault Injection Simulator Can select the target _figures by type, tag, ARN,">
+  
+  <meta property="og:url" content="https://fangjin98.github.io/2023/12/21/fi/" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fault Injection Research">
+  
+  <meta name="twitter:description" content="Existing Works  故障演练 Chaos 火山引擎混沌工程之云原生场景实现 字节跳动异构场景下的高可用建设实践 AWS FIS  AWS Fault Injection Simulator Can select the target _figures by type, tag, ARN,">
+  
+  
+  <meta name="twitter:image" content="https://Fangjin98.github.ioundefined">
+  
+  <meta name="twitter:url" content="https://fangjin98.github.io/2023/12/21/fi/" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Preload fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preload" href="/fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+<link rel="stylesheet" href="/css/normalize.css">
+
+  
+<link rel="stylesheet" href="/css/skeleton.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+<link rel="stylesheet" href="/css/prism-dark.css">
+
+  
+<link rel="stylesheet" href="/css/prism-line-numbers.css">
+
+  <!-- User css -->
+  
+  
+<link rel="stylesheet" href="/css/user.css">
+
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
+  a:not(.icon) {
+    text-decoration-color: #0FA0CE;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      #0FA0CE 50%
+    );
+  }
+  blockquote {
+    border-left: 8px solid #0FA0CE;
+  }
+  .nanobar .bar {
+    background: #0FA0CE;
+  }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #0FA0CE;
+    border-color: #0FA0CE;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #0FA0CE;
+  }
+</style>
+
+  <!-- Google Analytics (With Privacy Settings On)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Joey's Blog" type="application/atom+xml">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="row">
+  <div class="two columns" style="max-width: 50px">
+    <h1 class="mt-2 mode">
+      <div onclick=setDarkMode(true) id="darkBtn">☀️</div>
+      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>🌑</div>
+      <script >
+        if (localStorage.getItem('preferredTheme') == 'dark') {
+          setDarkMode(true)
+        }
+        function setDarkMode(isDark) {
+          var darkBtn = document.getElementById('darkBtn')
+          var lightBtn = document.getElementById('lightBtn')
+          if (isDark) {
+            lightBtn.style.display = "block"
+            darkBtn.style.display = "none"
+            localStorage.setItem('preferredTheme', 'dark');
+          } else {
+            lightBtn.style.display = "none"
+            darkBtn.style.display = "block"
+            localStorage.removeItem('preferredTheme');
+          }
+          document.body.classList.toggle("darkmode");
+        }
+      </script>
+    </h1>
+  </div>
+
+  <div class="six columns ml-1">
+    <h1 class="mt-2">
+      Hello World.
+    </h1>
+  </div>
+
+  <div class="twelve columns">
+    <div class="row">
+      <div class="nine columns left">
+        <a href="/">Home</a>
+        
+          
+          <a href="/about" class="ml">About</a>
+          
+        
+          
+          <a href="/archives" class="ml">Posts</a>
+          
+        
+          
+          <a href="/pdf/resume.pdf" class="ml">CV</a>
+          
+        
+        
+          
+            <a href="mailto:Fangjin98@outlook.com" target="_blank" class="ml">Email</a>
+          
+        
+      </div>
+    </div>
+    <hr style="margin-bottom: 2.6rem">
+  </div>
+</div>
+
+        <div class="trans">
+            <h2>Fault Injection Research</h2>
+
+  <h3 id="existing-works">Existing Works</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.aliyun.com/product/aliware/ahas/chaos">故障演练 Chaos</a></li>
+<li><a target="_blank" rel="noopener" href="https://developer.volcengine.com/articles/7257050491912192019">火山引擎混沌工程之云原生场景实现</a></li>
+<li><a target="_blank" rel="noopener" href="https://developer.volcengine.com/articles/7041808990837145636">字节跳动异构场景下的高可用建设实践</a></li>
+<li><a target="_blank" rel="noopener" href="https://aws.amazon.com/cn/fis/">AWS FIS</a>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://aws.amazon.com/cn/blogs/aws/aws-fault-injection-simulator-use-controlled-experiments-to-boost-resilience/">AWS Fault Injection Simulator</a></li>
+<li>Can select the target _figures by type, tag, ARN, or by querying for specific attributes.</li>
+<li>Can stop the experiment if one or more stop conditions (as defined by CloudWatch Alarms) are met.</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://help.aliyun.com/document_detail/185036.html">Alibaba</a>
+<ul>
+<li>只能<strong>针对单个实例设置故障</strong></li>
+<li>提供的故障注入配置项较多，能够设置流量精确匹配，设置的一些内容和AWS在会场上说的都比较一致。</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://www.huaweicloud.com/guide/category-17376220">Huawei</a>
+<ul>
+<li>配置项是简单的开启关闭，开启多久，故障概率，<strong>没有实现流量精确匹配</strong>，也不能制定故障行为（时延，包损坏等）</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/dastergon/awesome-chaos-engineering">awesome-chaos-engineering</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/chaosblade-io/chaosblade">ChaosBlade</a>：阿里开源的故障注入工具。</li>
+<li><a target="_blank" rel="noopener" href="https://chaos-mesh.org/"><strong>Chaos Mesh</strong></a>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/chaos-mesh/chaos-mesh">Github Repo</a>: Implimented by Go.</li>
+<li><a target="_blank" rel="noopener" href="https://chaos-mesh.org/docs/simulate-network-chaos-on-kubernetes/">Supported network failures</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>NSDI 11, <a target="_blank" rel="noopener" href="https://dsf.berkeley.edu/papers/nsdi11-fate-destini.pdf">FATE and DESTINI: A Framework for Cloud Recovery Testing</a>: Testing <em>cloud services</em> with system failure injection.</li>
+<li>NSDI 12, <a target="_blank" rel="noopener" href="https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final105.pdf">A NICE Way to Test OpenFlow Applications</a>: <em>OpenFlow</em> applications.</li>
+<li>HotCloud 13, <a target="_blank" rel="noopener" href="https://www.usenix.org/system/files/conference/hotcloud13/hotcloud13-ju.pdf">Towards a Fault-Resilient Cloud Management Stack</a>: <em>Openstack</em></li>
+<li>ASE 20, <a target="_blank" rel="noopener" href="https://web.cse.ohio-state.edu/~qin.34/pub-papers/CoFI-ASE20.pdf">CoFI: Consistency-Guided Fault Injection for Cloud Systems</a>: <em>network paration</em> fault</li>
+<li>OSDI 22, <a target="_blank" rel="noopener" href="https://www.usenix.org/system/files/osdi22-sun.pdf">Automatic Reliability Testing for Cluster Management Controllers</a>:<em>k8s</em> applications.</li>
+<li>NSDI 23, <a target="_blank" rel="noopener" href="https://www.usenix.org/system/files/nsdi23-chen-yinfang.pdf">Push-Button Reliability Testing for Cloud-Backed Applications with Rainmaker</a> : <em>dot Net</em> Applications, Rainmaker puts its focus on transient errors faced by cloud-backed applications</li>
+<li><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/1203468">VirtualWire: a fault injection and analysis tool for network protocols</a>, ICDCS 2003: with a fault specific language</li>
+<li>ThorFI: A Novel Approach for Network Fault Injection as a Service: targeting OVS network failures, implemented with Openstack</li>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/abs/1907.13039">Observability and Chaos Engineering on System Calls for Containerized Applications in Docker</a>: targeting system call in docker</li>
+<li><a target="_blank" rel="noopener" href="https://www.usenix.org/system/files/osdi18-veeraraghavan.pdf">Maelstrom: Mitigating Datacenter-level Disasters by Draining Interdependent Traffic  Safely and Efficiently</a></li>
+<li><a target="_blank" rel="noopener" href="https://ep.jhu.edu/wp-content/uploads/2021/08/GLRC14_v4.pdf">Using Chaos Engineering to Improve The Resiliency of Transportation Cyber Physical Systems: A Novel Approach to the Test and Evaluation of Complex Systems</a></li>
+</ul>
+<h3 id="network-faults">Network Faults</h3>
+<ul>
+<li>SIGCOMM 11, <a target="_blank" rel="noopener" href="https://conferences.sigcomm.org/sigcomm/2011/papers/sigcomm/p350.pdf">Understanding Network Failures in Data Centers: Measurement, Analysis, and Implications</a></li>
+<li>OSDI 18, <a target="_blank" rel="noopener" href="https://www.usenix.org/system/files/osdi18-alquraan.pdf">An Analysis of Network-Partitioning Failures in Cloud Systems</a></li>
+<li>TON 19, <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/abstract/document/8836620">Understanding the Limits of Passive Realtime Datacenter Fault Detection and Localization</a>: Moreover, failures are not always obvious; network components can fail partially, dropping or delaying only subsets of packets. Thus, traditional fault detection techniques involving end-host or router-based statistics can fall short in their ability to identify these errors.</li>
+<li>NSDI 21, <a target="_blank" rel="noopener" href="https://www.usenix.org/system/files/nsdi21-kannan.pdf"><strong>Debugging Transient Faults in Data Centers using Synchronized Network-wide Packet Histories</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/3098822.3098849">Understanding and Mitigating Packet Corruption in Data Center Networks</a></li>
+</ul>
+<h3 id="testing">Testing</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2109.10727.pdf">Frisbee: automated testing of Cloud-native applications in Kubernetes</a></li>
+<li><a target="_blank" rel="noopener" href="https://ratul.org/papers/nsdi2023-netcov.pdf">Test Coverage for Network Configurations</a></li>
+<li><a target="_blank" rel="noopener" href="https://ennanzhai.github.io/pub/nsdi23fall-norma.pdf">Norma: Towards Practical Network Load Testing</a></li>
+</ul>
+
+  
+  
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+  
+
+  <p><a class="classtest-link" href="/tags/Summary/" rel="tag">Summary</a> — Dec 21, 2023</p>
+
+          
+          
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="/js/nanobar.min.js"></script>
+  <script>
+    var options = {
+      classname: 'nanobar',
+      id: 'myNanobar'
+    };
+    var nanobar = new Nanobar(options);
+    nanobar.go(30);
+    nanobar.go(76);
+    nanobar.go(100);
+  </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
