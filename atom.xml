@@ -28,8 +28,9 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;LLM-Training&quot;&gt;&lt;a href=&quot;#LLM-Training&quot; class=&quot;headerlink&quot; title=&quot;LLM Training&quot;&gt;&lt;/a&gt;LLM Training&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;NSDI 24, MegaScale:</summary>
+    <summary type="html">&lt;h3 id=&quot;llm-training&quot;&gt;LLM Training&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NSDI 24, MegaScale: Scaling Large Language Model Training to More Than 10,000</summary>
         
       
     
@@ -101,8 +102,9 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;Well-Tested&quot;&gt;&lt;a href=&quot;#Well-Tested&quot; class=&quot;headerlink&quot; title=&quot;Well Tested&quot;&gt;&lt;/a&gt;Well Tested&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;well-tested&quot;&gt;Well Tested&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://dl.acm.org/doi/pdf/10.1145/3603269.3604856&quot;&gt;&lt;strong&gt;Hydra: Effective</summary>
         
       
     
@@ -127,7 +129,10 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;Representative-Groups&quot;&gt;&lt;a href=&quot;#Representative-Groups&quot; class=&quot;headerlink&quot; title=&quot;Representative Groups&quot;&gt;&lt;/a&gt;Representative</summary>
+    <summary type="html">&lt;h3 id=&quot;representative-groups&quot;&gt;Representative Groups&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://wenfei-wu.github.io/&quot;&gt;Wenfei Wu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a</summary>
         
       
     
@@ -150,7 +155,8 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;Overview&quot;&gt;&lt;a href=&quot;#Overview&quot; class=&quot;headerlink&quot; title=&quot;Overview&quot;&gt;&lt;/a&gt;Overview&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;overview&quot;&gt;Overview&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.usenix.org/conference/nsdi23&quot;&gt;NSDI 23&lt;/a&gt; has 24 technical</summary>
         
       
     
@@ -252,7 +258,8 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;This work is a continuation of the gradient routing (see this &lt;a href=&quot;/2022/08/25/grid/&quot;&gt;post&lt;/a&gt;).&lt;br&gt;&lt;del&gt;INFOCOM23:</summary>
+&lt;p&gt;This work is a continuation of the gradient routing (see this &lt;a href=&quot;/2022/08/25/grid/&quot;&gt;post&lt;/a&gt;).&lt;br&gt;
+&lt;s&gt;INFOCOM23:</summary>
         
       
     
@@ -330,7 +337,9 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;del&gt;Submitted to JSAC (2022.4.17).&lt;/del&gt;&lt;br&gt;&lt;del&gt;JSAC: (Rejected) Scores 4 4 4 6 3 3.&lt;/del&gt;&lt;br&gt;Accepted by ToN</summary>
+&lt;p&gt;&lt;s&gt;Submitted to JSAC (2022.4.17).&lt;/s&gt;&lt;br&gt;
+&lt;s&gt;JSAC: (Rejected) Scores 4 4 4 6 3 3.&lt;/s&gt;&lt;br&gt;
+Accepted by ToN</summary>
         
       
     
@@ -358,7 +367,9 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;del&gt;INFOCOM22: (Rejected) Scores 3 3 2 1&lt;/del&gt;&lt;br&gt;&lt;del&gt;IWQoS 2022: (Rejected) Scores 3 3 1&lt;/del&gt;&lt;br&gt;Accepted by ComNet</summary>
+&lt;p&gt;&lt;s&gt;INFOCOM22: (Rejected) Scores 3 3 2 1&lt;/s&gt;&lt;br&gt;
+&lt;s&gt;IWQoS 2022: (Rejected) Scores 3 3 1&lt;/s&gt;&lt;br&gt;
+Accepted by ComNet</summary>
         
       
     

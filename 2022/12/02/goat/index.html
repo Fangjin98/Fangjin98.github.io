@@ -17,7 +17,7 @@
   
   <link rel="canonical" href="https://fangjin98.github.io/2022/12/02/goat/">
   
-  <meta name="description" content="This work is a continuation of the gradient routing (see this post).INFOCOM23: (Rejected) Scores 3 3 3.Accepted by IWQoS 23 (5 4 3 3).  By aggregating">
+  <meta name="description" content="This work is a continuation of the gradient routing (see this post). INFOCOM23: (Rejected) Scores 3 3 3. Accepted by IWQoS 23 (5 4 3 3).  By aggregati">
   
   
   <meta name="keywords" content="CS, Computer Networks, Powerlifting">
@@ -30,14 +30,14 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="One Switch is Not Enough, What about More Switches?" />
   
-  <meta property="og:description" content="This work is a continuation of the gradient routing (see this post).INFOCOM23: (Rejected) Scores 3 3 3.Accepted by IWQoS 23 (5 4 3 3).  By aggregating">
+  <meta property="og:description" content="This work is a continuation of the gradient routing (see this post). INFOCOM23: (Rejected) Scores 3 3 3. Accepted by IWQoS 23 (5 4 3 3).  By aggregati">
   
   <meta property="og:url" content="https://fangjin98.github.io/2022/12/02/goat/" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="One Switch is Not Enough, What about More Switches?">
   
-  <meta name="twitter:description" content="This work is a continuation of the gradient routing (see this post).INFOCOM23: (Rejected) Scores 3 3 3.Accepted by IWQoS 23 (5 4 3 3).  By aggregating">
+  <meta name="twitter:description" content="This work is a continuation of the gradient routing (see this post). INFOCOM23: (Rejected) Scores 3 3 3. Accepted by IWQoS 23 (5 4 3 3).  By aggregati">
   
   
   <meta name="twitter:image" content="https://Fangjin98.github.ioundefined">
@@ -200,18 +200,21 @@
             <h2>One Switch is Not Enough, What about More Switches?</h2>
 
   <blockquote>
-<p>This work is a continuation of the gradient routing (see this <a href="/2022/08/25/grid/">post</a>).<br><del>INFOCOM23: (Rejected) Scores 3 3 3.</del><br>Accepted by IWQoS 23 (5 4 3 3).</p>
+<p>This work is a continuation of the gradient routing (see this <a href="/2022/08/25/grid/">post</a>).<br>
+<s>INFOCOM23: (Rejected) Scores 3 3 3.</s><br>
+Accepted by IWQoS 23 (5 4 3 3).</p>
 </blockquote>
 <p>By aggregating gradients in programmable switches, multiple gradients can be reduced to 1 aggregated gradient, thus mitigating the communication overhead. However, the aggregation performance is limited by its on-chip memory size.</p>
-<h3 id="How-Do-Exsiting-Methods-Aggregate-Gradient-in-Programmable-Switches"><a href="#How-Do-Exsiting-Methods-Aggregate-Gradient-in-Programmable-Switches" class="headerlink" title="How Do Exsiting Methods Aggregate Gradient in Programmable Switches?"></a>How Do Exsiting Methods Aggregate Gradient in Programmable Switches?</h3><p>Existing solutions adopt the <em>memory sharing scheme</em> to conduct in-network aggregation.</p>
-<p>In particular, the switch memory is divided into $N$ memory units, each of which can store a part of gradients (i.e., gradient fragments) at a time.</p>
-<p>Correspondingly, the gradient is divided into $M$ fragments, <em>each having the same size as the memory unit</em>. When one fragment arrives at a switch, it will be hashed to a specific unit according to its index (e.g., fragment $i$ will be hashed to memory unit $i\%N$).</p>
+<h3 id="how-do exsiting methods aggregate gradient in programmable switches?">How Do Exsiting Methods Aggregate Gradient in Programmable Switches?</h3>
+<p>Existing solutions adopt the <em>memory sharing scheme</em> to conduct in-network aggregation.</p>
+<p>In particular, the switch memory is divided into <span class="markdown-them-math-inline">$N$</span> memory units, each of which can store a part of gradients (i.e., gradient fragments) at a time.</p>
+<p>Correspondingly, the gradient is divided into <span class="markdown-them-math-inline">$M$</span> fragments, <em>each having the same size as the memory unit</em>. When one fragment arrives at a switch, it will be hashed to a specific unit according to its index (e.g., fragment <span class="markdown-them-math-inline">$i$</span> will be hashed to memory unit <span class="markdown-them-math-inline">$i\%N$</span>).</p>
 <p>Given that the switch memory size is usually smaller than the gradient size, multiple gradient fragments will be hashed to the same memory unit. Therefore, <strong>asynchronously arriving fragments may encounter hash collision, degrading the throughput of in-network aggregation</strong>.</p>
 <p style="text-align: center;">
     <img src="2023-02-11T151628.png" alt="memory sharing example" width="60%" alignment="center">
 </p>
-
-<h3 id="Little-On-chip-Memory-of-Programmable-Switches-Needs-More-Design-for-In-network-Aggregation"><a href="#Little-On-chip-Memory-of-Programmable-Switches-Needs-More-Design-for-In-network-Aggregation" class="headerlink" title="Little On-chip Memory of Programmable Switches Needs More Design for In-network Aggregation"></a>Little On-chip Memory of Programmable Switches Needs More Design for In-network Aggregation</h3><p>The motivation of this work is simple. <strong>Since one switch can not store the entire gradient, what about using multiple switches to store?</strong></p>
+<h3 id="little-on-chip memory of programmable switches needs more design for in-network aggregation">Little On-chip Memory of Programmable Switches Needs More Design for In-network Aggregation</h3>
+<p>The motivation of this work is simple. <strong>Since one switch can not store the entire gradient, what about using multiple switches to store?</strong></p>
 <p>Given some switches, the traditional way is each switch aggregates a set of workers’ gradients. But we change the way of gradient fragments assignment.</p>
 <p>In practice, one model can be divided into a set of sub-models (e.g., model layers), whose gradient is aggregated independently. Our key idea is to schedule sub-model gradients to multiple switches for collaborative in-network aggregation. This makes programmable switches possible to store all gradients and aggregate asynchronously arriving gradients</p>
 

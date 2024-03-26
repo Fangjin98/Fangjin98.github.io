@@ -17,7 +17,7 @@
   
   <link rel="canonical" href="https://fangjin98.github.io/2022/12/10/nsdi22-nethint/">
   
-  <meta name="description" content="You can find the paper here.  MotivationDue to the emergence of data-intensive applications, the traditional black-box network doesn’t suit the needs ">
+  <meta name="description" content="You can find the paper here.  Motivation Due to the emergence of data-intensive applications, the traditional black-box network doesn’t suit the needs">
   
   
   <meta name="keywords" content="CS, Computer Networks, Powerlifting">
@@ -30,14 +30,14 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Do We Need a White-box Network? (Reading Summary of NetHint)" />
   
-  <meta property="og:description" content="You can find the paper here.  MotivationDue to the emergence of data-intensive applications, the traditional black-box network doesn’t suit the needs ">
+  <meta property="og:description" content="You can find the paper here.  Motivation Due to the emergence of data-intensive applications, the traditional black-box network doesn’t suit the needs">
   
   <meta property="og:url" content="https://fangjin98.github.io/2022/12/10/nsdi22-nethint/" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Do We Need a White-box Network? (Reading Summary of NetHint)">
   
-  <meta name="twitter:description" content="You can find the paper here.  MotivationDue to the emergence of data-intensive applications, the traditional black-box network doesn’t suit the needs ">
+  <meta name="twitter:description" content="You can find the paper here.  Motivation Due to the emergence of data-intensive applications, the traditional black-box network doesn’t suit the needs">
   
   
   <meta name="twitter:image" content="https://Fangjin98.github.ioundefined">
@@ -202,23 +202,29 @@
   <blockquote>
 <p>You can find the paper <a target="_blank" rel="noopener" href="https://www.usenix.org/conference/nsdi22/presentation/chen-jingrong">here</a>.</p>
 </blockquote>
-<h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>Due to the emergence of data-intensive applications, the traditional black-box network doesn’t suit the needs of cloud tenants and providers. The cloud tenant is unaware of the network characteristics, and the cloud provider is unaware of the application communication semantics and the transfer schedule. This mismatch incurs low performance and efficiency for data-intensive applications.</p>
+<h3 id="motivation">Motivation</h3>
+<p>Due to the emergence of data-intensive applications, the traditional black-box network doesn’t suit the needs of cloud tenants and providers. The cloud tenant is unaware of the network characteristics, and the cloud provider is unaware of the application communication semantics and the transfer schedule. This mismatch incurs low performance and efficiency for data-intensive applications.</p>
 <p>To address this issue, this paper proposes the NetHint, a mechanism for a cloud tenant and cloud provider to interact to enhance the application performance jointly, by providing a hint (an indirect indication of the bandwidth allocation) to a cloud tenant. NetHint mainly answers the following three questions:</p>
 <ol>
 <li>What information should the hint contain?</li>
 <li>How to provide this hint at a low cost?</li>
 <li>How should applications react to the hint?</li>
 </ol>
-<h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><h4 id="Black-box-Network"><a href="#Black-box-Network" class="headerlink" title="Black-box Network"></a>Black-box Network</h4><p>Nowadays, black-box network abstraction is a per-VM bandwidth allocation at the end hosts. Therefore, tenants are unaware of the underlying network characteristics and cannot predict their network performance. </p>
+<h3 id="background">Background</h3>
+<h4 id="black-box-network">Black-box Network</h4>
+<p>Nowadays, black-box network abstraction is a per-VM bandwidth allocation at the end hosts. Therefore, tenants are unaware of the underlying network characteristics and cannot predict their network performance.</p>
 <p><em>The authors present an example of Allreduce with 4 VMs in the paper (Sec. 2.1).</em></p>
-<h4 id="Data-intensive-Applications"><a href="#Data-intensive-Applications" class="headerlink" title="Data-intensive Applications"></a>Data-intensive Applications</h4><p>Many distributed data analytics workloads contain network-intensive shuffle phases between different job stages. Given network characteristics, distributed data analytics applications can change their transfer schedules (by changing the task placement) to minimize shuffle completion time.</p>
+<h4 id="data-intensive-applications">Data-intensive Applications</h4>
+<p>Many distributed data analytics workloads contain network-intensive shuffle phases between different job stages. Given network characteristics, distributed data analytics applications can change their transfer schedules (by changing the task placement) to minimize shuffle completion time.</p>
 <p>The black-box nature of the existing networking abstraction and the adaptiveness of data-intensive applications create a mismatch. Data-intensive applications would benefit from more network information from the cloud provider to configure their transfer schedules, but black-box networking hides this information. To address this mismatch, the authors propose the NetHint.</p>
-<h3 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h3><p>The key idea of NetHint is that the provider provides a hint — an <em>indirect indication</em> of the underlying network characteristics (e.g., a virtual link-layer topology for a tenant’s VMs, number of co-located tenants, network bandwidth utilization) to a cloud tenant.</p>
+<h3 id="overview">Overview</h3>
+<p>The key idea of NetHint is that the provider provides a hint — an <em>indirect indication</em> of the underlying network characteristics (e.g., a virtual link-layer topology for a tenant’s VMs, number of co-located tenants, network bandwidth utilization) to a cloud tenant.</p>
 <p>The provider provides a NetHint service, which periodically (100 ms by default) collects the hint information to capture changes of the underlying network characteristics. A tenant application can query the NetHint service to get the hint information, and then adapt its transfer schedules based on this provided hint.</p>
 <p>NetHint describes a virtual link-layer topology that connects a tenant’s VMs. In addition, NetHint provides to the tenant recent utilization summaries and counts of co-locating tenant connections on shared network links in the virtual topology.</p>
 <p>The network traffic can be measured in the physical switches using network telemetry. However, this depends on specific programmable switch features. One alternative is each machine monitors local flows and transmits statistics to one dedicated machine, which runs a NetHint server process to aggregate the rack-level information. These NetHint servers use all-to-all communication to exchange information.</p>
 <p>The tenants can make use of the NetHint information via simple scheduling algorithms.</p>
-<h3 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h3><ul>
+<h3 id="others">Others</h3>
+<ul>
 <li>Sec. 4 illustrate the realization of NetHint.</li>
 <li>Sec. 5 illustrates how to adapt to NetHint’s hints.</li>
 </ul>

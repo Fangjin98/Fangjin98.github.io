@@ -209,7 +209,8 @@
 <li>Machine Learning</li>
 <li><em>Monitoring and Measurement</em></li>
 <li>Sensing and Wireless Communication</li>
-<li><em>Programmable Data Planes</em><ul>
+<li><em>Programmable Data Planes</em>
+<ul>
 <li>Predictable vFabric on Informative Data Plane</li>
 <li>Using trio: juniper networks’ programmable chipset - for emerging in-network applications</li>
 <li>Thanos: Programmable Multi-Dimensional Table Filters for Line Rate Network Functions (hard core)</li>
@@ -220,7 +221,8 @@
 <li>Denial of Service Defense and Storage Networks</li>
 <li>Host Networking and Video Delivery</li>
 </ol>
-<h3 id="Interested-Papers"><a href="#Interested-Papers" class="headerlink" title="Interested Papers"></a>Interested Papers</h3><ul>
+<h3 id="interested-papers">Interested Papers</h3>
+<ul>
 <li><a target="_blank" rel="noopener" href="https://research.google/pubs/pub51587/">Jupiter Evolving: Transforming Google’s Datacenter Network via Optical Circuit Switches and Software-Defined Networking</a></li>
 <li><a target="_blank" rel="noopener" href="https://yiwenzhang92.github.io/assets/docs/aequitas-sigcomm22.pdf">Aequitas: Admission Control for Performance-Critical RPCs in Datacenters</a>: Targeting guarteeing SLO of RPCs</li>
 <li><a target="_blank" rel="noopener" href="https://liangchengyu.com/doc/cebinae-sigcomm2022.pdf">Cebinae: Scalable In-network Fairness Augmentation</a>: Enabling the fairness among different congestion control protocols with programmable switches</li>
@@ -228,7 +230,8 @@
 <li><a target="_blank" rel="noopener" href="https://research.protocol.ai/publications/design-and-evaluation-of-ipfs-a-storage-layer-for-the-decentralized-web/trautwein2022.pdf">Design and Evaluation of IPFS: A Storage Layer for the Decentralized Web</a>: Illustrating the implementation of IPFS, the largest and most widely used Decentralized Web platform</li>
 <li><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/3544216.3544262">Using trio: juniper networks’ programmable chipset - for emerging in-network applications</a>：Mentioned INA</li>
 </ul>
-<h3 id="Jupiter-Evolving-Transforming-Google’s-Datacenter-Network-via-Optical-Circuit-Switches-and-Software-Defined-Networking"><a href="#Jupiter-Evolving-Transforming-Google’s-Datacenter-Network-via-Optical-Circuit-Switches-and-Software-Defined-Networking" class="headerlink" title="Jupiter Evolving: Transforming Google’s Datacenter Network via Optical Circuit Switches and Software-Defined Networking"></a>Jupiter Evolving: Transforming Google’s Datacenter Network via Optical Circuit Switches and Software-Defined Networking</h3><p>Google proposed a new datacenter architecture in this paper.</p>
+<h3 id="jupiter-evolving: transforming google’s datacenter network via optical circuit switches and software-defined networking">Jupiter Evolving: Transforming Google’s Datacenter Network via Optical Circuit Switches and Software-Defined Networking</h3>
+<p>Google proposed a new datacenter architecture in this paper.</p>
 <ul>
 <li>A datacenter  interconnection layer</li>
 <li>Centralized SDN controller for traffic engineering</li>
@@ -241,11 +244,13 @@
 <li>spine层的带宽会限制后续更新的其他模块带宽，造成计算和网络资源失配</li>
 </ol>
 <p>为了解决Clos架构难以增量更新的问题，这篇论文提出了一个新的架构，包含对应的网络管理，流量和拓扑工程。该架构能够在流量不确定，集群异构的场景下工作。</p>
-<h3 id="Aequitas-Admission-Control-for-Performance-Critical-RPCs-in-Datacenters"><a href="#Aequitas-Admission-Control-for-Performance-Critical-RPCs-in-Datacenters" class="headerlink" title="Aequitas: Admission Control for Performance-Critical RPCs in Datacenters"></a>Aequitas: Admission Control for Performance-Critical RPCs in Datacenters</h3><p>Another paper of Google, targeting guarteeing SLO of RPCs.</p>
+<h3 id="aequitas:-admission control for performance-critical rpcs in datacenters">Aequitas: Admission Control for Performance-Critical RPCs in Datacenters</h3>
+<p>Another paper of Google, targeting guarteeing SLO of RPCs.</p>
 <p>Traditional traffic classification categories cannot sufficiently capture their importance due to wide variations in RPC characteristics.</p>
 <p>As of 2021, <em>RPCs generate 95%+ of the application traffic in Google production datacenters</em>, of which ∼75% is to and from storage systems.</p>
 <p>An RPC is a programmatic request for action or information between components of applications, and it can consist of dozens of individual packets. Hundreds of RPCs can be on the critical path to completing an application-level operation.</p>
-<h3 id="Cebinae-Scalable-In-network-Fairness-Augmentation"><a href="#Cebinae-Scalable-In-network-Fairness-Augmentation" class="headerlink" title="Cebinae: Scalable In-network Fairness Augmentation"></a>Cebinae: Scalable In-network Fairness Augmentation</h3><p>Enabling the fairness among different congestion control protocols with programmable switches. </p>
+<h3 id="cebinae:-scalable in-network fairness augmentation">Cebinae: Scalable In-network Fairness Augmentation</h3>
+<p>Enabling the fairness among different congestion control protocols with programmable switches.</p>
 <p>现有拥塞控制协议的多样性会导致租户资源占用不公平，Cebinae通过惩罚超过max-min份额的流，增强现有网络。</p>
 <p>Key insights</p>
 <ol>
@@ -253,7 +258,8 @@
 <li>Advanced scheduling logic can be adopted based on the above simplification.</li>
 </ol>
 <p>Open sourced in <a target="_blank" rel="noopener" href="https://github.com/eniac/Cebinae">https://github.com/eniac/Cebinae</a></p>
-<h3 id="FlyMon-Enabling-On-the-Fly-Task-Reconfiguration-for-Network-Measurement"><a href="#FlyMon-Enabling-On-the-Fly-Task-Reconfiguration-for-Network-Measurement" class="headerlink" title="FlyMon: Enabling On-the-Fly Task Reconfiguration for Network Measurement"></a>FlyMon: Enabling On-the-Fly Task Reconfiguration for Network Measurement</h3><p>一作是南大，三作是北大杨仝。</p>
+<h3 id="flymon:-enabling on-the-fly task reconfiguration for network measurement">FlyMon: Enabling On-the-Fly Task Reconfiguration for Network Measurement</h3>
+<p>一作是南大，三作是北大杨仝。</p>
 <p>Sketch-based measurement system that can make on-the-fly reconfigurations on a large set of measurement tasks.</p>
 <blockquote>
 <p>This paper may be useful for my future research.</p>

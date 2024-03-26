@@ -17,7 +17,7 @@
   
   <link rel="canonical" href="https://fangjin98.github.io/2022/08/25/grid/">
   
-  <meta name="description" content="Submitted to JSAC (2022.4.17).JSAC: (Rejected) Scores 4 4 4 6 3 3.Accepted by ToN (2023.2.9)  What is the Distributed Training?A deep neural network (">
+  <meta name="description" content="Submitted to JSAC (2022.4.17). JSAC: (Rejected) Scores 4 4 4 6 3 3. Accepted by ToN (2023.2.9)  What is the Distributed Training? A deep neural networ">
   
   
   <meta name="keywords" content="CS, Computer Networks, Powerlifting">
@@ -30,14 +30,14 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="We Need to Route Gradients for Distributed Training with In-network Aggregation Carefully" />
   
-  <meta property="og:description" content="Submitted to JSAC (2022.4.17).JSAC: (Rejected) Scores 4 4 4 6 3 3.Accepted by ToN (2023.2.9)  What is the Distributed Training?A deep neural network (">
+  <meta property="og:description" content="Submitted to JSAC (2022.4.17). JSAC: (Rejected) Scores 4 4 4 6 3 3. Accepted by ToN (2023.2.9)  What is the Distributed Training? A deep neural networ">
   
   <meta property="og:url" content="https://fangjin98.github.io/2022/08/25/grid/" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="We Need to Route Gradients for Distributed Training with In-network Aggregation Carefully">
   
-  <meta name="twitter:description" content="Submitted to JSAC (2022.4.17).JSAC: (Rejected) Scores 4 4 4 6 3 3.Accepted by ToN (2023.2.9)  What is the Distributed Training?A deep neural network (">
+  <meta name="twitter:description" content="Submitted to JSAC (2022.4.17). JSAC: (Rejected) Scores 4 4 4 6 3 3. Accepted by ToN (2023.2.9)  What is the Distributed Training? A deep neural networ">
   
   
   <meta name="twitter:image" content="https://Fangjin98.github.ioundefined">
@@ -200,29 +200,36 @@
             <h2>We Need to Route Gradients for Distributed Training with In-network Aggregation Carefully</h2>
 
   <blockquote>
-<p><del>Submitted to JSAC (2022.4.17).</del><br><del>JSAC: (Rejected) Scores 4 4 4 6 3 3.</del><br>Accepted by ToN (2023.2.9)</p>
+<p><s>Submitted to JSAC (2022.4.17).</s><br>
+<s>JSAC: (Rejected) Scores 4 4 4 6 3 3.</s><br>
+Accepted by ToN (2023.2.9)</p>
 </blockquote>
-<h3 id="What-is-the-Distributed-Training"><a href="#What-is-the-Distributed-Training" class="headerlink" title="What is the Distributed Training?"></a>What is the <em>Distributed Training</em>?</h3><p>A deep neural network (DNN) model consists of multiple network layers, each of which contains a large number of parameters. Training a DNN model requires hundreds of iterations over the dataset to achieve convergence.</p>
-<p>As the scale of DNN  model training increases, single machine can not satisfy the computation and storage demands.<br>Some propose distributed training, which splits one DNN model training task into several sub-tasks each of which is assigned to a machine (i.e., worker), to speed up the model training (distributed training, DT).</p>
+<h3 id="what-is the *distributed training*?">What is the <em>Distributed Training</em>?</h3>
+<p>A deep neural network (DNN) model consists of multiple network layers, each of which contains a large number of parameters. Training a DNN model requires hundreds of iterations over the dataset to achieve convergence.</p>
+<p>As the scale of DNN  model training increases, single machine can not satisfy the computation and storage demands.<br>
+Some propose distributed training, which splits one DNN model training task into several sub-tasks each of which is assigned to a machine (i.e., worker), to speed up the model training (distributed training, DT).</p>
 <p>In terms of the parallelism schemes, the distributed training can be categorized into two main types: model parallelism and data parallelism. This paper focuses on the data parallelism distributed training, which splits the whole dataset into multiple compute nodes. In each iteration, each compute node independently trains the model on its partition of the dataset to generate the <strong>gradient</strong>. Subsequently, compute nodes communicate with other nodes to update the global model parameters (i.e., gradient aggregation).</p>
 <p>Parameter Server (PS) is a widely-adopted gradient aggregation scheme. In PS, there are two kinds of compute nodes: workers and parameter servers. Workers generate and push gradients to parameter servers. Afterward, parameter servers aggregate all the gradients and update the model parameters. At last, workers pull the updated results from parameter servers for the next training iteration.</p>
 <p><strong>But what is the price of DT?</strong></p>
-<p>Recent studies have shown that the bottleneck in distributed model training is shifting from computing to communication. According to work<sup><a href="#ref1">1</a></sup>, for a DT task training DeepLight on 100Gbps links, $79\%$ of the training time is occupied for communication.</p>
-<h3 id="What-Can-We-Do"><a href="#What-Can-We-Do" class="headerlink" title="What Can We Do?"></a>What Can We Do?</h3><p>One intuitive way is to reduce the size of forwarded gradients. Some works reduce the gradient size by gradient compression. But here we introduce another way called <strong><a href="/2022/01/04/INAReview/">in-network aggregation</a></strong>, which utilizes programmable switches to mitigate the communication bottlenack.</p>
-<p>The idea of in-network aggregation begins at wireless networks and now attracts researchers to adopt in-network aggregation in datacenters.<br>Specifically, in-network aggregation offloads part of gradients aggregated in the latest programmable switches to reduce the amount of transferred data, alleviating the communication bottleneck.</p>
+<p>Recent studies have shown that the bottleneck in distributed model training is shifting from computing to communication. According to work<sup><a href="#ref1">1</a></sup>, for a DT task training DeepLight on 100Gbps links, <span class="markdown-them-math-inline">$79\%$</span> of the training time is occupied for communication.</p>
+<h3 id="what-can we do?">What Can We Do?</h3>
+<p>One intuitive way is to reduce the size of forwarded gradients. Some works reduce the gradient size by gradient compression. But here we introduce another way called <strong><a href="/2022/01/04/INAReview/">in-network aggregation</a></strong>, which utilizes programmable switches to mitigate the communication bottlenack.</p>
+<p>The idea of in-network aggregation begins at wireless networks and now attracts researchers to adopt in-network aggregation in datacenters.<br>
+Specifically, in-network aggregation offloads part of gradients aggregated in the latest programmable switches to reduce the amount of transferred data, alleviating the communication bottleneck.</p>
 <p>Let’s take a look at an example.</p>
 <p><img src="fig1.jpg" alt="motivation"></p>
 <p>Consider a distributed training task containing 1 PS and 8 workers. Each link has a bandwidth of 3Gbps. We set the ingress bandwidth of the PS to 9Gbps. The processing capacity of programmable switches is 9Gbps.</p>
 <p>Since the PS needs to wait for gradients of all workers to perform global aggregation, we take the minimum gradient sending rate as the critical metric. We use <em>load/capacity</em> to denote the ratio of workload and capacity for programmable switches and links. The solid arrows represent the aggregated gradients, and the dotted arrows represent the non-aggregated gradients sent by workers.</p>
-<p>We first consider Scheme 1, which does not utilize in-network aggregation. In this case, Scheme 1 schedules the gradient of $W_4$ through the path $W_4$-&gt;$S_1$-&gt;$S_2$-&gt;$S_3$-&gt;$PS$ to avoid congestion in link $L_1$. Accrodingly, the gradients of workers $W_1$-$W_3$ are scheduled through the paths $W_1$-&gt;$S_1$-&gt;$S_3$-&gt;$PS$, $W_2$-&gt;$S_1$-&gt;$S_3$-&gt;$PS$ and $W_3$-&gt;$S_1$-&gt;$S_3$-&gt;$PS$, respectively.<br>Due to bandwidth constraints of links $L_1$ and $L_3$, workers $W_1$-$W_6$ will send the gradients with the minimum gradient sending rate of 1Gbps.</p>
-<p>We then consider Scheme 2, a state-of-the-art method with in-network aggregation. In Scheme 2, Each worker chooses the nearest programmable switches for in-network aggregation. If the processing capacity of the programmable switch is exhausted, it will directly transfer the gradients to the PS. In this case, since the processing capacity of $S_1$ is 9Gbps, $W_1$-$W_4$ can send gradients with the speed of 9/4=2.25Gbps. Moreover, $W_1$-$W_4$ can send gradients with the additional speed of 0.75/4=0.18Gbps to the PS, since link $L_1$ still has 3-2.25=0.75Gbps available bandwidth. These gradients will be aggregated by $S_3$ with available processing capacity. As a result, the minimum gradient sending rate is 2.43Gbps.</p>
+<p>We first consider Scheme 1, which does not utilize in-network aggregation. In this case, Scheme 1 schedules the gradient of <span class="markdown-them-math-inline">$W_4$</span> through the path <span class="markdown-them-math-inline">$W_4$</span>-&gt;<span class="markdown-them-math-inline">$S_1$</span>-&gt;<span class="markdown-them-math-inline">$S_2$</span>-&gt;<span class="markdown-them-math-inline">$S_3$</span>-&gt;<span class="markdown-them-math-inline">$PS$</span> to avoid congestion in link <span class="markdown-them-math-inline">$L_1$</span>. Accrodingly, the gradients of workers <span class="markdown-them-math-inline">$W_1$</span>-<span class="markdown-them-math-inline">$W_3$</span> are scheduled through the paths <span class="markdown-them-math-inline">$W_1$</span>-&gt;<span class="markdown-them-math-inline">$S_1$</span>-&gt;<span class="markdown-them-math-inline">$S_3$</span>-&gt;<span class="markdown-them-math-inline">$PS$</span>, <span class="markdown-them-math-inline">$W_2$</span>-&gt;<span class="markdown-them-math-inline">$S_1$</span>-&gt;<span class="markdown-them-math-inline">$S_3$</span>-&gt;<span class="markdown-them-math-inline">$PS$</span> and <span class="markdown-them-math-inline">$W_3$</span>-&gt;<span class="markdown-them-math-inline">$S_1$</span>-&gt;<span class="markdown-them-math-inline">$S_3$</span>-&gt;<span class="markdown-them-math-inline">$PS$</span>, respectively.<br>
+Due to bandwidth constraints of links <span class="markdown-them-math-inline">$L_1$</span> and <span class="markdown-them-math-inline">$L_3$</span>, workers <span class="markdown-them-math-inline">$W_1$</span>-<span class="markdown-them-math-inline">$W_6$</span> will send the gradients with the minimum gradient sending rate of 1Gbps.</p>
+<p>We then consider Scheme 2, a state-of-the-art method with in-network aggregation. In Scheme 2, Each worker chooses the nearest programmable switches for in-network aggregation. If the processing capacity of the programmable switch is exhausted, it will directly transfer the gradients to the PS. In this case, since the processing capacity of <span class="markdown-them-math-inline">$S_1$</span> is 9Gbps, <span class="markdown-them-math-inline">$W_1$</span>-<span class="markdown-them-math-inline">$W_4$</span> can send gradients with the speed of 9/4=2.25Gbps. Moreover, <span class="markdown-them-math-inline">$W_1$</span>-<span class="markdown-them-math-inline">$W_4$</span> can send gradients with the additional speed of 0.75/4=0.18Gbps to the PS, since link <span class="markdown-them-math-inline">$L_1$</span> still has 3-2.25=0.75Gbps available bandwidth. These gradients will be aggregated by <span class="markdown-them-math-inline">$S_3$</span> with available processing capacity. As a result, the minimum gradient sending rate is 2.43Gbps.</p>
 <p><strong>What if we combine Scheme 1 and 2?</strong></p>
 <p>Scheme 2 has the following shortcomes:</p>
 <ol>
 <li>When the processing capacity of one switch is exchausted, workers can not select another switch for in-network aggregation.</li>
 <li>Even if the processing capacities of switches is sufficient, the PS needs to aggregate all gradients from switches, which is a waste.</li>
 </ol>
-<p>To address this two shortcomes, we present GRID, which performs gradient routing with in-network aggregation. The challeges of determining gradient routing are </p>
+<p>To address this two shortcomes, we present GRID, which performs gradient routing with in-network aggregation. The challeges of determining gradient routing are</p>
 <ol>
 <li>The in-network aggregation will change the total amount of forwarded gradients, making existing routing methods inefficient.</li>
 <li>Due to network dynamics, gradient packets may arrive at programmable switches asynchronously, decreasing the in-network aggregation throughput.</li>
@@ -230,8 +237,10 @@
 <blockquote>
 <p>If you want to know how we address these challeges, please see <a href="/pdf/GRID.pdf">here</a>.</p>
 </blockquote>
-<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><ol>
-<li><p name = "ref1"> https://www.usenix.org/conference/nsdi21/presentation/sapio </p></li>
+<h3 id="references">References</h3>
+<ol>
+<li>
+<p name = "ref1"> https://www.usenix.org/conference/nsdi21/presentation/sapio </p></li>
 </ol>
 
   

@@ -17,7 +17,7 @@
   
   <link rel="canonical" href="https://fangjin98.github.io/2024/03/18/dt/">
   
-  <meta name="description" content="LLM Training NSDI 24, MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs ZeRO++: Extremely Efficient Collective Communication f">
+  <meta name="description" content="LLM Training  NSDI 24, MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs ZeRO++: Extremely Efficient Collective Communication ">
   
   
   <meta name="keywords" content="CS, Computer Networks, Powerlifting">
@@ -30,14 +30,14 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Distributed Training Research" />
   
-  <meta property="og:description" content="LLM Training NSDI 24, MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs ZeRO++: Extremely Efficient Collective Communication f">
+  <meta property="og:description" content="LLM Training  NSDI 24, MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs ZeRO++: Extremely Efficient Collective Communication ">
   
   <meta property="og:url" content="https://fangjin98.github.io/2024/03/18/dt/" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Distributed Training Research">
   
-  <meta name="twitter:description" content="LLM Training NSDI 24, MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs ZeRO++: Extremely Efficient Collective Communication f">
+  <meta name="twitter:description" content="LLM Training  NSDI 24, MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs ZeRO++: Extremely Efficient Collective Communication ">
   
   
   <meta name="twitter:image" content="https://Fangjin98.github.ioundefined">
@@ -199,7 +199,8 @@
         <div class="trans">
             <h2>Distributed Training Research</h2>
 
-  <h3 id="LLM-Training"><a href="#LLM-Training" class="headerlink" title="LLM Training"></a>LLM Training</h3><ul>
+  <h3 id="llm-training">LLM Training</h3>
+<ul>
 <li>NSDI 24, MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs</li>
 <li>ZeRO++: Extremely Efficient Collective Communication for Giant Model Training</li>
 <li>DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale</li>
@@ -207,7 +208,8 @@
 <li><strong>Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM</strong></li>
 <li>GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism</li>
 </ul>
-<h3 id="Gradient-Compression"><a href="#Gradient-Compression" class="headerlink" title="Gradient Compression"></a>Gradient Compression</h3><ul>
+<h3 id="gradient-compression">Gradient Compression</h3>
+<ul>
 <li>ATC 22, Campo: Cost-Aware Performance Optimization for Mixed-Precision Neural Network Training</li>
 <li>Rethinking Floating Point Overheads for Mixed Precision DNN Accelerators</li>
 <li>SIGCOMM 21, <a target="_blank" rel="noopener" href="https://conferences.sigcomm.org/sigcomm/2021/files/papers/3452296.3472904.pdf">Efficient Sparse Collective Communication and its application to Accelerate Distributed Deep Learning</a>, Sparsity, Communication</li>
@@ -215,17 +217,20 @@
 <li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2402.07529.pdf">Accelerating Distributed Deep Learning using Lossless Homomorphic Compression</a></li>
 <li>NSDI 24, <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2302.08545.pdf">THC: Accelerating Distributed Deep Learning Using Tensor Homomorphic Compression</a></li>
 </ul>
-<h3 id="Model-Parallelism"><a href="#Model-Parallelism" class="headerlink" title="Model Parallelism"></a>Model Parallelism</h3><ul>
+<h3 id="model-parallelism">Model Parallelism</h3>
+<ul>
 <li>PipeDream: Generalized Pipeline Parallelism for DNN Training</li>
 <li>OSDI’23, AlpaServe: Statistical Multiplexing with Model Parallelism for Deep Learning Serving</li>
 <li>OSDI’22, Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning</li>
 <li>INFOCOM’22, Efficient Pipeline Planning for Expedited Distributed DNN Training</li>
 <li>HPDC’22, <a target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/3502181.3531462">Hare: Exploiting Inter-job and Intra-job Parallelism of Distributed Machine Learning on Heterogeneous GPUs</a></li>
 </ul>
-<h3 id="In-network-Aggregation"><a href="#In-network-Aggregation" class="headerlink" title="In-network Aggregation"></a>In-network Aggregation</h3><blockquote>
+<h3 id="in-network-aggregation">In-network Aggregation</h3>
+<blockquote>
 <p>See this <a href="/2023/07/03/ina/">post</a> for details.</p>
 </blockquote>
-<h3 id="Asynchronous-Training"><a href="#Asynchronous-Training" class="headerlink" title="Asynchronous Training"></a>Asynchronous Training</h3><ul>
+<h3 id="asynchronous-training">Asynchronous Training</h3>
+<ul>
 <li>Developing a Loss Prediction-based Asynchronous Stochastic Gradient Descent Algorithm for Distributed Training of Deep Neural Networks：这篇文章介绍了异步更新的模式。看来参数服务器并没有一个具体的阈值确定何时进行异步更新。这篇文章提出一个算法以弥补梯度损失值。</li>
 <li>ICDCS 19, Dynamic Stale Synchronous Parallel Distributed Training for Deep Learning：提出一种自适应确定延迟轮数方法。</li>
 <li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1511.05950.pdf">Staleness-aware Async-SGD for Distributed Deep Learning</a>: 针对异步分布式模型训练调整学习率。</li>
@@ -237,23 +242,27 @@
 <li>INT Lab, FedSA: A Semi-Asynchronous Federated Learning Mechanism in Heterogeneous Edge Computing：在联邦学习场景中，由于节点异构，数据分布以及网络资源等问题，同步学习需要忍受很大的同步代价。因此现有研究关注异步学习。这篇论文确定每轮训练中，参数服务器收到哪<em>k</em>个工作节点的梯度才更新全局模型。这篇论文根据<em>边缘异构性</em>和<em>数据分布</em>决定<em>k</em>的值。</li>
 <li>INT Lab, Adaptive Asynchronous Federated Learning in Resource-Constrained Edge Computing：这篇文章根据实时系统状态，例如网络资源，为每一轮异步训练确定聚合的工作节点比例。和上一篇工作内容相似。这里是根据全局信息确定的M，感觉参考意义不大</li>
 </ul>
-<h4 id="Straggler-Problem"><a href="#Straggler-Problem" class="headerlink" title="Straggler Problem"></a>Straggler Problem</h4><ul>
+<h4 id="straggler-problem">Straggler Problem</h4>
+<ul>
 <li>Nurd: Negative-Unlabeled Learning for Online Datacenter Straggler Prediction：这篇文章并不是分布式模型训练场景，而是分布式系统中。提出了一个利用无监督学习预测数据中心慢节点的方法。</li>
 <li><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9488815"><strong>Live Gradient Compensation for Evading Stragglers in Distributed Learning</strong></a>：清华深研院发表于 INFOCOM 21。通过梯度补偿机制，解决较慢工作节点拖累训练速度的问题，并能保证训练快速收敛</li>
 <li><a target="_blank" rel="noopener" href="http://proceedings.mlr.press/v70/tandon17a/tandon17a.pdf">Gradient Coding: Avoiding Stragglers in Distributed Learning</a>：在同步场景下通过复制数据和编码梯度，容忍一部分错误和慢节点</li>
 <li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1806.02508v1.pdf">Fast Distributed Deep Learning via Worker-adaptive Batch Sizing</a>：根据节点处理容量分配数据批大小，使较慢的节点处理更少的数据（这种方式的问题在于，完全认为慢节点是由于计算容量限制造成的）</li>
-<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2102.06280.pdf"><strong>Straggler-Resilient Distributed Machine Learning with Dynamic Backup Workers</strong></a>：发表在 Arxiv 上。为了解决慢节点问题，一个方式是中心节点只聚合一部分工作节点的梯度，未被聚合的工作节点称为 Backup Workers。<ul>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2102.06280.pdf"><strong>Straggler-Resilient Distributed Machine Learning with Dynamic Backup Workers</strong></a>：发表在 Arxiv 上。为了解决慢节点问题，一个方式是中心节点只聚合一部分工作节点的梯度，未被聚合的工作节点称为 Backup Workers。
+<ul>
 <li>通过一个分布式算法确定每个工作节点的备份工作节点数</li>
 <li>实验数据集有点小</li>
 <li>有收敛性分析</li>
 </ul>
 </li>
 </ul>
-<h3 id="GPU-Scheduling"><a href="#GPU-Scheduling" class="headerlink" title="GPU Scheduling"></a>GPU Scheduling</h3><ul>
+<h3 id="gpu-scheduling">GPU Scheduling</h3>
+<ul>
 <li>Gandiva: Introspective Cluster Scheduling for Deep Learning</li>
 <li>TON’23, Deep Learning-Based Job Placement in Distributed Machine Learning Clusters With Heterogeneous Workloads</li>
 <li>SOCC’22, <a target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/3620678.3624669">Anticipatory Resource Allocation for ML Training</a></li>
-<li><a target="_blank" rel="noopener" href="https://cn287zbjkb.feishu.cn/docx/XWdhdYaxDoncKBxlJBhcbL3Xnwd">Pollux: Co-adaptive Cluster Scheduling for Goodput-Optimized Deep Learning</a>：基于<strong>模型超参</strong>来优化放置任务<ul>
+<li><a target="_blank" rel="noopener" href="https://cn287zbjkb.feishu.cn/docx/XWdhdYaxDoncKBxlJBhcbL3Xnwd">Pollux: Co-adaptive Cluster Scheduling for Goodput-Optimized Deep Learning</a>：基于<strong>模型超参</strong>来优化放置任务
+<ul>
 <li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/442196995">https://zhuanlan.zhihu.com/p/442196995</a></li>
 </ul>
 </li>
@@ -261,7 +270,8 @@
 <li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2308.00852.pdf">CASSINI: Network-Aware Job Scheduling in Machine Learning Clusters</a>：结合ML训练任务流量特点的带宽分配机制。通过调整任务开始时间，使带宽错峰分配。</li>
 <li>Tessel: Boosting Distributed Execution of Large DNN Models via Flexible Schedule Search</li>
 </ul>
-<h4 id="Resource-Fragmentation-Problem"><a href="#Resource-Fragmentation-Problem" class="headerlink" title="Resource Fragmentation Problem"></a>Resource Fragmentation Problem</h4><ul>
+<h4 id="resource-fragmentation problem">Resource Fragmentation Problem</h4>
+<ul>
 <li>ATC 23, <a target="_blank" rel="noopener" href="https://cse.hkust.edu.hk/~weiwa/papers/fgd-atc23.pdf">Beware of Fragmentation Scheduling GPU-Sharing Workloads with Fragmentation Gradient Descent</a></li>
 </ul>
 
