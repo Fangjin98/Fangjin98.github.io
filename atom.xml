@@ -6,7 +6,7 @@
   <link href="https://fangjin98.github.io/atom.xml" rel="self"/>
   
   <link href="https://fangjin98.github.io/"/>
-  <updated>2024-03-25T15:23:41.452Z</updated>
+  <updated>2024-04-01T08:19:40.472Z</updated>
   <id>https://fangjin98.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Compression Works for Sparse Model Training</title>
+    <link href="https://fangjin98.github.io/2024/03/26/dt-compression/"/>
+    <id>https://fangjin98.github.io/2024/03/26/dt-compression/</id>
+    <published>2024-03-26T07:11:49.000Z</published>
+    <updated>2024-04-01T08:19:40.472Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/kpuxrDg2qpVNY2JsHFzbyQ&quot;&gt;模型稀疏化是未来大模型发展的趋势&lt;/a&gt;，其中包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;激活稀疏性：Attention</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Distributed Training" scheme="https://fangjin98.github.io/tags/Distributed-Training/"/>
+    
+    <category term="LLM Training" scheme="https://fangjin98.github.io/tags/LLM-Training/"/>
+    
+    <category term="Sparse Model" scheme="https://fangjin98.github.io/tags/Sparse-Model/"/>
+    
+  </entry>
   
   <entry>
     <title>Distributed Training Research</title>
@@ -250,7 +279,7 @@
     <link href="https://fangjin98.github.io/2022/12/02/goat/"/>
     <id>https://fangjin98.github.io/2022/12/02/goat/</id>
     <published>2022-12-02T06:35:22.000Z</published>
-    <updated>2023-07-06T08:36:33.201Z</updated>
+    <updated>2024-04-01T07:13:48.957Z</updated>
     
     
       
@@ -329,7 +358,7 @@
     <link href="https://fangjin98.github.io/2022/08/25/grid/"/>
     <id>https://fangjin98.github.io/2022/08/25/grid/</id>
     <published>2022-08-25T09:09:56.000Z</published>
-    <updated>2023-07-06T08:36:33.202Z</updated>
+    <updated>2024-04-01T07:13:21.445Z</updated>
     
     
       

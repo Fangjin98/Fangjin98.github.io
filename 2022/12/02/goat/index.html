@@ -217,6 +217,9 @@ Accepted by IWQoS 23 (5 4 3 3).</p>
 <p>The motivation of this work is simple. <strong>Since one switch can not store the entire gradient, what about using multiple switches to store?</strong></p>
 <p>Given some switches, the traditional way is each switch aggregates a set of workers’ gradients. But we change the way of gradient fragments assignment.</p>
 <p>In practice, one model can be divided into a set of sub-models (e.g., model layers), whose gradient is aggregated independently. Our key idea is to schedule sub-model gradients to multiple switches for collaborative in-network aggregation. This makes programmable switches possible to store all gradients and aggregate asynchronously arriving gradients</p>
+<blockquote>
+<p>If you want to know how we address these challeges, please see <a href="/pdf/goat.pdf">here</a>.</p>
+</blockquote>
 
   
   
