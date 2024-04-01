@@ -59,7 +59,7 @@ To address this two shortcomes, we present GRID, which performs gradient routing
 1. The in-network aggregation will change the total amount of forwarded gradients, making existing routing methods inefficient.
 2. Due to network dynamics, gradient packets may arrive at programmable switches asynchronously, decreasing the in-network aggregation throughput.
 
-> If you want to know how we address these challeges, please see [here](/pdf/GRID.pdf).
+> If you want to know how we address these challeges, please see [here](/pdf/grid.pdf).
 
 ### References
 

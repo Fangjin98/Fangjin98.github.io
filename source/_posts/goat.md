@@ -35,3 +35,5 @@ The motivation of this work is simple. **Since one switch can not store the enti
 Given some switches, the traditional way is each switch aggregates a set of workers' gradients. But we change the way of gradient fragments assignment.
 
 In practice, one model can be divided into a set of sub-models (e.g., model layers), whose gradient is aggregated independently. Our key idea is to schedule sub-model gradients to multiple switches for collaborative in-network aggregation. This makes programmable switches possible to store all gradients and aggregate asynchronously arriving gradients
+
+> If you want to know how we address these challeges, please see [here](/pdf/goat.pdf).
