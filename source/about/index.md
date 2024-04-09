@@ -25,6 +25,9 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 ### Journal Papers
 
+- *Accelerating Distributed Training with Collaborative In-network Aggregation*
+  **Jin Fang**, Gongming Zhao, Hongli Xu, Zhuolong Yu, Bingchen Shen, Liguang Xie
+  IEEE/ACM Transactions on Networking (**ToN**), 2024
 - *GRID: Gradient Routing with In-network Aggregation for Distributed Training* 
   **Jin Fang**, Gongming Zhao, Hongli Xu, Changbo Wu, Zhuolong Yu
   IEEE/ACM Transactions on Networking (**ToN**), 2023
