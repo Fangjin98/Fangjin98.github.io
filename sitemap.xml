@@ -155,20 +155,6 @@
 
   
   <url>
-    <loc>https://fangjin98.github.io/tags/Paper-Reading/</loc>
-    <lastmod>2024-04-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fangjin98.github.io/tags/Conference/</loc>
-    <lastmod>2024-04-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://fangjin98.github.io/tags/LLM-Training/</loc>
     <lastmod>2024-04-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -184,6 +170,20 @@
   
   <url>
     <loc>https://fangjin98.github.io/tags/Distributed-Training/</loc>
+    <lastmod>2024-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fangjin98.github.io/tags/Paper-Reading/</loc>
+    <lastmod>2024-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fangjin98.github.io/tags/Conference/</loc>
     <lastmod>2024-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
