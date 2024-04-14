@@ -37,11 +37,11 @@
     
     
     
-    <category term="Distributed Training" scheme="https://fangjin98.github.io/tags/Distributed-Training/"/>
-    
     <category term="LLM Training" scheme="https://fangjin98.github.io/tags/LLM-Training/"/>
     
     <category term="Sparse Model" scheme="https://fangjin98.github.io/tags/Sparse-Model/"/>
+    
+    <category term="Distributed Training" scheme="https://fangjin98.github.io/tags/Distributed-Training/"/>
     
   </entry>
   
@@ -295,9 +295,9 @@
     
     
     
-    <category term="Programmable Network" scheme="https://fangjin98.github.io/tags/Programmable-Network/"/>
-    
     <category term="Distributed Training" scheme="https://fangjin98.github.io/tags/Distributed-Training/"/>
+    
+    <category term="Programmable Network" scheme="https://fangjin98.github.io/tags/Programmable-Network/"/>
     
     <category term="In-network Aggregation" scheme="https://fangjin98.github.io/tags/In-network-Aggregation/"/>
     
@@ -375,9 +375,9 @@ Accepted by ToN</summary>
     
     
     
-    <category term="Programmable Network" scheme="https://fangjin98.github.io/tags/Programmable-Network/"/>
-    
     <category term="Distributed Training" scheme="https://fangjin98.github.io/tags/Distributed-Training/"/>
+    
+    <category term="Programmable Network" scheme="https://fangjin98.github.io/tags/Programmable-Network/"/>
     
     <category term="In-network Aggregation" scheme="https://fangjin98.github.io/tags/In-network-Aggregation/"/>
     
