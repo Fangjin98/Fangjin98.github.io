@@ -5,7 +5,7 @@ date: 2021-12-23 16:55:31
 
 I am a part of [USTC Intelligent Network and System Group](https://int-ustc.github.io/index.html) in the Department of Computer Science at University of Science and Technology of China (**USTC**), supervised by Prof. [Hongli Xu](http://staff.ustc.edu.cn/~xuhongli/) and Prof. [Gongmin Zhao](https://gmzhao-ustc.github.io/). Before that, I received my bachelor's degree from the College of Computer Science and Electronic Engineering, Hunan University (**HNU**) in 2020.
 
-My research interest lies in the field of *programmable network*, *in-network computing* and *distributed systems*. You can view my CV [**here**](../pdf/resume.pdf) ([中文版](../pdf/resume-zh.pdf)).
+My research interest lies in the field of *programmable network*, *in-network computing* and *distributed training*. You can view my CV [**here**](../pdf/resume.pdf) ([中文版](../pdf/resume-zh.pdf)).
 
 If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">contact me</a>.
 
@@ -13,6 +13,12 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 - Ph.D. (2020-present), Computer Science, University of Science and Technology of China, China
 - B.S. (2016–2020), Computer Science, Hunan University, China
+
+## Experiences
+
+- 2024.6-present, Intern, ByteDance AML (Network Group), Beijing, China
+- 2023.12-2024.5, Research Intern, Huawei 2012 Lab (Network Group), Hefei, China
+- 2022.6-2022.9, Research Intern, Zhijiang Lab, Hangzhou, China
 
 ## Publications
 
@@ -28,6 +34,7 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 - *Accelerating Distributed Training with Collaborative In-network Aggregation*
   **Jin Fang**, Gongming Zhao, Hongli Xu, Zhuolong Yu, Bingchen Shen, Liguang Xie
   IEEE/ACM Transactions on Networking (**ToN**), 2024
+  [[pdf](../pdf/goat-ton.pdf)]
 - *GRID: Gradient Routing with In-network Aggregation for Distributed Training* 
   **Jin Fang**, Gongming Zhao, Hongli Xu, Changbo Wu, Zhuolong Yu
   IEEE/ACM Transactions on Networking (**ToN**), 2023
