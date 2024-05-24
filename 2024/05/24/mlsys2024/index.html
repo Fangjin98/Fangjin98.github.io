@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Minima -->
+  <!-- Hexo theme created by @adisaktijrs -->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+
+  
+  <title>Selected MLsys Papers Published on Top-Conferences</title>
+  
+  <link rel="sitemap" href="https://Fangjin98.github.iositemap.xml" />
+  
+  <link rel="canonical" href="https://fangjin98.github.io/2024/05/24/mlsys2024/">
+  
+  <meta name="description" content="This post lists some papers published on top-conferences (e.g., NSDI’24, OSDI’24, ASPLOS’24, Eurosys’24) about MLsys or LLM. Systems GPU Cluster  [NSD">
+  
+  
+  <meta name="keywords" content="CS, Computer Networks, Powerlifting">
+  
+  <meta name="author" content="Joey">
+  
+  <meta property="og:image" content="https://Fangjin98.github.ioundefined">
+  
+  <meta property="og:site_name" content="Joey&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Selected MLsys Papers Published on Top-Conferences" />
+  
+  <meta property="og:description" content="This post lists some papers published on top-conferences (e.g., NSDI’24, OSDI’24, ASPLOS’24, Eurosys’24) about MLsys or LLM. Systems GPU Cluster  [NSD">
+  
+  <meta property="og:url" content="https://fangjin98.github.io/2024/05/24/mlsys2024/" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Selected MLsys Papers Published on Top-Conferences">
+  
+  <meta name="twitter:description" content="This post lists some papers published on top-conferences (e.g., NSDI’24, OSDI’24, ASPLOS’24, Eurosys’24) about MLsys or LLM. Systems GPU Cluster  [NSD">
+  
+  
+  <meta name="twitter:image" content="https://Fangjin98.github.ioundefined">
+  
+  <meta name="twitter:url" content="https://fangjin98.github.io/2024/05/24/mlsys2024/" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Preload fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preload" href="/fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+<link rel="stylesheet" href="/css/normalize.css">
+
+  
+<link rel="stylesheet" href="/css/skeleton.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+<link rel="stylesheet" href="/css/prism-dark.css">
+
+  
+<link rel="stylesheet" href="/css/prism-line-numbers.css">
+
+  <!-- User css -->
+  
+  
+<link rel="stylesheet" href="/css/user.css">
+
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
+  a:not(.icon) {
+    text-decoration-color: #0FA0CE;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      #0FA0CE 50%
+    );
+  }
+  blockquote {
+    border-left: 8px solid #0FA0CE;
+  }
+  .nanobar .bar {
+    background: #0FA0CE;
+  }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #0FA0CE;
+    border-color: #0FA0CE;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #0FA0CE;
+  }
+</style>
+
+  <!-- Google Analytics (With Privacy Settings On)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Joey's Blog" type="application/atom+xml">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="row">
+  <div class="two columns" style="max-width: 50px">
+    <h1 class="mt-2 mode">
+      <div onclick=setDarkMode(true) id="darkBtn">☀️</div>
+      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>🌑</div>
+      <script >
+        if (localStorage.getItem('preferredTheme') == 'dark') {
+          setDarkMode(true)
+        }
+        function setDarkMode(isDark) {
+          var darkBtn = document.getElementById('darkBtn')
+          var lightBtn = document.getElementById('lightBtn')
+          if (isDark) {
+            lightBtn.style.display = "block"
+            darkBtn.style.display = "none"
+            localStorage.setItem('preferredTheme', 'dark');
+          } else {
+            lightBtn.style.display = "none"
+            darkBtn.style.display = "block"
+            localStorage.removeItem('preferredTheme');
+          }
+          document.body.classList.toggle("darkmode");
+        }
+      </script>
+    </h1>
+  </div>
+
+  <div class="six columns ml-1">
+    <h1 class="mt-2">
+      Hello World.
+    </h1>
+  </div>
+
+  <div class="twelve columns">
+    <div class="row">
+      <div class="nine columns left">
+        <a href="/">Home</a>
+        
+          
+          <a href="/about" class="ml">About</a>
+          
+        
+          
+          <a href="/archives" class="ml">Posts</a>
+          
+        
+          
+          <a href="/pdf/resume.pdf" class="ml">CV</a>
+          
+        
+        
+          
+            <a href="mailto:Fangjin98@outlook.com" target="_blank" class="ml">Email</a>
+          
+        
+      </div>
+    </div>
+    <hr style="margin-bottom: 2.6rem">
+  </div>
+</div>
+
+        <div class="trans">
+            <h2>Selected MLsys Papers Published on Top-Conferences</h2>
+
+  <p>This post lists some papers published on top-conferences (e.g., NSDI’24, OSDI’24, ASPLOS’24, Eurosys’24) about MLsys or LLM.</p>
+<h2 id="systems">Systems</h2>
+<h3 id="gpu-cluster">GPU Cluster</h3>
+<ul>
+<li>[NSDI’24] MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs：字节万卡集群实践</li>
+<li>[NSDI’24] Resiliency at Scale: Managing Google’s TPUv4 Machine Learning Supercomputer
+<ul>
+<li>容错路由指的是容什么错？</li>
+</ul>
+</li>
+<li>[NSDI’24] Characterization of Large Language Model Development in the Datacenter</li>
+<li>[ASPLOS’24] TCCL: Discovering Better Communication Paths for PCIe GPU Clusters</li>
+</ul>
+<h3 id="networking">Networking</h3>
+<ul>
+<li>[NSDI’24] Towards Domain-Specific Network Transport for Distributed DNN Training</li>
+<li>[NSDI’24] Swing: Short-cutting Rings for Higher Bandwidth Allreduce</li>
+</ul>
+<h3 id="scheduling">Scheduling</h3>
+<ul>
+<li>[ASPLOS’24] Centauri: Enabling Efficient Scheduling for Communication-Computation Overlap in Large Model Training via Communication Partitioning</li>
+<li>[NSDI’24] Parcae: Proactive, Liveput-Optimized DNN Training on Preemptible Instances
+<ul>
+<li>什么是spot实例</li>
+<li>这里的并行化策略主要影响bubble是吗？</li>
+</ul>
+</li>
+<li>[NSDI’24] CASSINI: Network-Aware Job Scheduling in Machine Learning Clusters</li>
+</ul>
+<h3 id="parallelism">Parallelism</h3>
+<ul>
+<li>[Eurosys’24] Aceso: Efficient Parallel DNN Training through Iterative Bottleneck Alleviation：根据集群配置和模型参数，生成合适的并行化配置（DP、PP、TP size）。不用传统最优化方法，使用梯度下降法迭代寻找配置。</li>
+<li>[ASPLOS’24] AdaPipe: Optimizing Pipeline Parallelism with Adaptive Recomputation and Partitioning：流水线并行会带来资源不均，重计算会带来额外的计算。因此确定流水线和重计算阶段的划分，来最大化内存利用率。</li>
+<li>[ASPLOS’24, Best Paper] Centauri: Enabling Efficient Scheduling for Communication-Computation Overlap in Large Model Training via Communication Partitioning：提出一个并行化抽象，并从三个维度进行划分，实现细粒度并行/重叠。</li>
+</ul>
+<h2 id="ml-related">ML Related</h2>
+<h3 id="llm-training">LLM Training</h3>
+<ul>
+<li>[Eurosys’24] ScheMoE: An Extensible Mixture-of-Experts Distributed Training System with Tasks Scheduling：提出一个 MoE 训练系统
+<ul>
+<li>提出了一个通用路由框架</li>
+<li>提出一个all-to-all算法</li>
+<li>允许用户自定义all-to-all算法和压缩机制</li>
+</ul>
+</li>
+<li>[Eurosys’24] DynaPipe: Optimizing Multi-task Training through Dynamic Pipelines：大语言模型接收的text长度可变，因此提出可变micro-batching机制来训练大语言模型</li>
+<li>[NSDI’24] DISTMM: Accelerating Distributed Multimodal Model Training
+<ul>
+<li>多模态的模型拆分和常见的模型拆分有啥不同？</li>
+</ul>
+</li>
+</ul>
+<h3 id="llm-serving">LLM Serving</h3>
+<p>LLM 推理请求由两部分组成：prefill 和 decoder，两部分特点不同，因此现有工作针对这两部分内容进行优化。</p>
+<ul>
+<li>[OSDI’24] Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve：基于已有工作调度prefill和decoder阶段。</li>
+<li>[OSDI’24] DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving：解耦prefill和decoding处理</li>
+<li>[OSDI’24] Fairness in Serving Large Language Models</li>
+<li>[OSDI’24] ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Model</li>
+</ul>
+<h3 id="sparse">Sparse</h3>
+<ul>
+<li>[NSDI’24] Accelerating Neural Recommendation Training with Embedding Scheduling：类似于梯度压缩工作。嵌入层存在零值，细粒度确定嵌入层哪部分应该训练，来降低系统负载。</li>
+<li>[ASPLOS’24] FEASTA: A Flexible and Efficient Accelerator for Sparse Tensor Algebra in Machine Learning</li>
+<li>[ASPLOS’24] ACES: Accelerating Sparse Matrix Multiplication with Adaptive Execution Flow and Concurrency-Aware Cache Optimizations：提出一个accelerator来适应灵活的稀疏矩阵相乘</li>
+</ul>
+
+  
+  
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+  
+
+  <p><a class="classtest-link" href="/tags/Conference/" rel="tag">Conference</a>, <a class="classtest-link" href="/tags/Distributed-Training/" rel="tag">Distributed Training</a>, <a class="classtest-link" href="/tags/LLM-Training/" rel="tag">LLM Training</a>, <a class="classtest-link" href="/tags/Sparse-Model/" rel="tag">Sparse Model</a> — May 24, 2024</p>
+
+          
+          
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="/js/nanobar.min.js"></script>
+  <script>
+    var options = {
+      classname: 'nanobar',
+      id: 'myNanobar'
+    };
+    var nanobar = new Nanobar(options);
+    nanobar.go(30);
+    nanobar.go(76);
+    nanobar.go(100);
+  </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
