@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://fangjin98.github.io/2024/05/24/mlsys2024/</loc>
+    <loc>https://fangjin98.github.io/about/index.html</loc>
     
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://fangjin98.github.io/about/index.html</loc>
+    <loc>https://fangjin98.github.io/2024/05/24/mlsys2024/</loc>
     
     <lastmod>2024-05-24</lastmod>
     
@@ -157,7 +157,7 @@
 
   <url>
     <loc>https://fangjin98.github.io/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -165,77 +165,77 @@
   
   <url>
     <loc>https://fangjin98.github.io/tags/LLM-Training/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangjin98.github.io/tags/Sparse-Model/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangjin98.github.io/tags/Distributed-Training/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangjin98.github.io/tags/Paper-Reading/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangjin98.github.io/tags/Conference/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangjin98.github.io/tags/Summary/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangjin98.github.io/tags/Programmable-Network/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangjin98.github.io/tags/In-network-Aggregation/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangjin98.github.io/tags/Software-Defined-Networking/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangjin98.github.io/tags/sspai/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangjin98.github.io/tags/Chinese/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
