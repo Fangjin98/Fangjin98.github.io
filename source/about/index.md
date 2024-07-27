@@ -5,7 +5,7 @@ date: 2021-12-23 16:55:31
 
 I am a part of [USTC Intelligent Network and System Group](https://int-ustc.github.io/index.html) in the Department of Computer Science at University of Science and Technology of China (**USTC**), supervised by Prof. [Hongli Xu](http://staff.ustc.edu.cn/~xuhongli/) and Prof. [Gongmin Zhao](https://gmzhao-ustc.github.io/). Before that, I received my bachelor's degree from the College of Computer Science and Electronic Engineering, Hunan University (**HNU**) in 2020.
 
-My research interest lies in the field of  *distributed training*, *programmable network*, and *in-network computing*. You can view my CV [**here**](../pdf/resume.pdf) ([中文版](../pdf/resume-zh.pdf)).
+My research interest lies in the field of *distributed training* and *in-network computing*. You can view my CV [**here**](../pdf/resume.pdf) ([中文版](../pdf/resume-zh.pdf)) (2024.6).
 
 If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">contact me</a>.
 
@@ -24,6 +24,9 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 ### Conference Papers
 
+- *Non-Idle Machine-Aware Worker Placement for Efficient Distributed Training in GPU Clusters* 
+  **Jin Fang**, Gongming Zhao, Hongli Xu, Luyao Luo, Zhen Yao, An Xie
+  IEEE International Conference on Network Protocols (**ICNP**), 2024
 - *GOAT: Gradient Scheduling with Collaborative In-Network Aggregation for Distributed Training* 
   **Jin Fang**, Gongming Zhao, Hongli Xu, Zhuolong Yu, Bingchen Shen, Liguang Xie
   IEEE/ACM International Symposium on Quality of Service (**IWQoS**), 2023
