@@ -5,7 +5,7 @@ date: 2021-12-23 16:55:31
 
 I am a part of [USTC Intelligent Network and System Group](https://int-ustc.github.io/index.html) in the Department of Computer Science at University of Science and Technology of China (**USTC**), supervised by Prof. [Hongli Xu](http://staff.ustc.edu.cn/~xuhongli/) and Prof. [Gongmin Zhao](https://gmzhao-ustc.github.io/). Before that, I received my bachelor's degree from the College of Computer Science and Electronic Engineering, Hunan University (**HNU**) in 2020.
 
-My research interest lies in the field of *distributed training* and *in-network computing*. You can view my CV [**here**](../pdf/resume.pdf) ([中文版](../pdf/resume-zh.pdf)) (2024.9).
+My research interest lies in the field of *mlsys* and *in-network computing*. You can view my CV [**here**](../pdf/resume.pdf) ([中文版](../pdf/resume-zh.pdf)) (2024.9).
 
 If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">contact me</a>.
 
@@ -16,28 +16,28 @@ If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">c
 
 ## Experiences
 
-- 2024.6-present, Research Intern, ByteDance AML, Beijing, China
-- 2023.12-2024.5, Research Intern, Huawei 2012 Lab, Hefei, China
+- 2024.6-present, Research Intern, ByteDance, Seed-Foundation-mlsys, Beijing, China
+- 2023.12-2024.5, Research Intern, Huawei 2012 Lab, Network Group, Hefei, China
 - 2022.6-2022.9, Research Intern, Zhijiang Lab, Hangzhou, China
 
 ## Publications
 
-### Conference Papers
-
-- *Non-Idle Machine-Aware Worker Placement for Efficient Distributed Training in GPU Clusters* 
+- *Non-Idle Machine-Aware Worker Placement for Efficient Distributed Training in GPU Clusters*
   **Jin Fang**, Gongming Zhao, Hongli Xu, Luyao Luo, Zhen Yao, An Xie
   IEEE International Conference on Network Protocols (**ICNP**), 2024
-- *GOAT: Gradient Scheduling with Collaborative In-Network Aggregation for Distributed Training* 
-  **Jin Fang**, Gongming Zhao, Hongli Xu, Zhuolong Yu, Bingchen Shen, Liguang Xie
-  IEEE/ACM International Symposium on Quality of Service (**IWQoS**), 2023
-  [[pdf](../pdf/goat.pdf)] [[slide](../pdf/goat-slide.pdf)] [[video](https://youtu.be/aYkok2JVDqk)] [[blog](/2022/12/02/goat/)]
-
-### Journal Papers
-
+  [[pdf](../pdf/titan.pdf)] [[slide](../pdf/titan-slide.pdf)]
+- *InArt: In-Network Aggregation with Route Selection for Accelerating Distributed Training*
+  Jiawei Liu, Yutong Zhai, Gongming Zhao, Hongli Xu, **Jin Fang**, Zhen Zeng, Ying Zhu
+  International World Wide Web Conferences (**WWW**), 2024
+  [[pdf](../pdf/inart.pdf)]
 - *Accelerating Distributed Training with Collaborative In-network Aggregation*
   **Jin Fang**, Gongming Zhao, Hongli Xu, Zhuolong Yu, Bingchen Shen, Liguang Xie
   IEEE/ACM Transactions on Networking (**ToN**), 2024
   [[pdf](../pdf/goat-ton.pdf)]
+- *GOAT: Gradient Scheduling with Collaborative In-Network Aggregation for Distributed Training* 
+  **Jin Fang**, Gongming Zhao, Hongli Xu, Zhuolong Yu, Bingchen Shen, Liguang Xie
+  IEEE/ACM International Symposium on Quality of Service (**IWQoS**), 2023
+  [[pdf](../pdf/goat.pdf)] [[slide](../pdf/goat-slide.pdf)] [[video](https://youtu.be/aYkok2JVDqk)] [[blog](/2022/12/02/goat/)]
 - *GRID: Gradient Routing with In-network Aggregation for Distributed Training* 
   **Jin Fang**, Gongming Zhao, Hongli Xu, Changbo Wu, Zhuolong Yu
   IEEE/ACM Transactions on Networking (**ToN**), 2023

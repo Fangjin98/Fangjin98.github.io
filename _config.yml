@@ -16,7 +16,7 @@ timezone: ''
 index_title: "Hello World."
 owner: "I am (Joey) Jin Fang"
 info: "A CS student, a coder, a powerlifting amateur..."
-desc: "My research interest lies in distributed training and in-network computing. 
+desc: "My research interest lies in mlsys and in-network computing. 
 In my spare time, I write chinese blogs in 少数派. 
 Hope my powerlifting record can reach 1323 lbs.
 "
