@@ -7,9 +7,9 @@ I am a part of [USTC Intelligent Network and System Group](https://int-ustc.gith
 
 My research interest lies in the field of *mlsys*, especially communication and computation co-optimzation for LLM jobs. Currently (2024.12), I focus on developing efficient collective communication library under limited hardware resources for long context LLM serving jobs.
 
-You can view my CV [**here**](../pdf/resume.pdf) ([中文版](../pdf/resume-zh.pdf)) (updated at 2024.9).
+You can view my CV [**here**](../pdf/resume.pdf) (updated at 2024.12) ([中文版](../pdf/resume-zh.pdf)).
 
-If you have any questions, feel free to <a href="mailto:Fangjin98@outlook.com">contact me</a>.
+If you have any questions or topics, feel free to <a href="mailto:Fangjin98@outlook.com">contact me</a>. Welcome!
 
 ## Education
 
