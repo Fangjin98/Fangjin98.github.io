@@ -5,7 +5,7 @@ date: 2021-12-23 16:55:31
 
 I am a part of [USTC Intelligent Network and System Group](https://int-ustc.github.io/index.html) in the Department of Computer Science at University of Science and Technology of China (**USTC**), supervised by Prof. [Hongli Xu](http://staff.ustc.edu.cn/~xuhongli/) and Prof. [Gongmin Zhao](https://gmzhao-ustc.github.io/). Before that, I received my bachelor's degree from the College of Computer Science and Electronic Engineering, Hunan University (**HNU**) in 2020.
 
-My research interest lies in the field of *mlsys*, especially communication and computation co-optimzation for LLM jobs. Currently (2024.12), I focus on developing efficient collective communication library under limited hardware resources for long context LLM serving jobs.
+My research interest lies in the field of *mlsys*, especially communication and computation co-optimzation for LLM jobs. Currently, I focus on developing efficient collective communication libraries, according to the requirements of computation operators (logically) and the computation hardware architectures (physically).
 
 You can view my CV [**here**](../pdf/resume.pdf) (updated at 2024.12) ([中文版](../pdf/resume-zh.pdf)).
 
@@ -14,7 +14,7 @@ If you have any questions or topics, feel free to <a href="mailto:Fangjin98@outl
 ## Education
 
 - Ph.D. (2020-present), Computer Science, University of Science and Technology of China, China
-- B.S. (2016–2020), Computer Science, Hunan University, China
+- B.S. (2016-2020), Computer Science, Hunan University, China
 
 ## Experiences
 
