@@ -24,6 +24,9 @@ If you have any questions or topics, feel free to <a href="mailto:Fangjin98@outl
 
 ## Publications
 
+- *TileLink: Generating Efficient Compute-Communication Overlapping Kernels using Tile-Centric Primitives*
+  Size Zheng, **Jin Fang**, Xuegui Zheng, Qi Hou, Wenlei Bao, Ningxin Zheng, Ziheng Jiang, Dongyang Wang, Jianxi Ye, Haibin Lin, Li-Wen Chang, Xin Liu
+  **MLSys 2025**
 - *Non-Idle Machine-Aware Worker Placement for Efficient Distributed Training in GPU Clusters*
   **Jin Fang**, Gongming Zhao, Hongli Xu, Luyao Luo, Zhen Yao, An Xie
   IEEE International Conference on Network Protocols (**ICNP**), 2024
