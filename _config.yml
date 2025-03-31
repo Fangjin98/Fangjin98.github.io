@@ -16,10 +16,9 @@ timezone: ''
 index_title: "Hello World."
 owner: "I am (Joey) Jin Fang"
 info: "A CS student, a coder, a powerlifting amateur..."
-desc: "My research interest lies in mlsys and in-network computing. 
-In my spare time, I write chinese blogs in 少数派. 
-Hope my powerlifting record can reach 1323 lbs.
-"
+desc: "My research focuses on machine learning systems (MLSys), particularly communication-computation co-optimization for LLMs. 
+In my spare time, I write blogs in [少数派](https://sspai.com/u/km1o497a/posts). 
+I hope my powerlifting record can reach 1323 lbs."
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
