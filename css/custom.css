@@ -338,3 +338,25 @@ body.darkmode {
   }
 
 }
+
+.news-list {
+  margin: 0rem 0;
+}
+.news-item {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0rem;
+  border-bottom: 1px solid #eee;
+}
+.news-date {
+  color: #666;
+  font-size: 1.5rem;
+}
+.news-title {
+  margin: 0rem 0;
+  font-size: 2rem;
+}
+.news-excerpt {
+  color: #555;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
