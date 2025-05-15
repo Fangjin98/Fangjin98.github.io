@@ -24,6 +24,8 @@ If you have any questions or topics, feel free to <a href="mailto:Fangjin98@outl
 
 ## Publications
 
+- *Triton-distributed: Programming Overlapping Kernels on Distributed AI Systems with the Triton Compiler*
+  Size Zheng, Wenlei Bao, Qi Hou, Xuegui Zheng, **Jin Fang**, Chenhui Huang, Tianqi Li, Haojie Duanmu, Renze Chen, Ruifan Xu, Yifan Guo, Ningxin Zheng, Ziheng Jiang, Xinyi Di, Dongyang Wang, Jianxi Ye, Haibin Lin, Li-Wen Chang, Liqiang Lu, Yun Liang, Jidong Zhai, Xin Liu [[Arxiv](https://arxiv.org/pdf/2504.19442v2)]
 - *TileLink: Generating Efficient Compute-Communication Overlapping Kernels using Tile-Centric Primitives*
   Size Zheng, **Jin Fang**, Xuegui Zheng, Qi Hou, Wenlei Bao, Ningxin Zheng, Ziheng Jiang, Dongyang Wang, Jianxi Ye, Haibin Lin, Li-Wen Chang, Xin Liu
   **MLSys 2025** [[Arxiv](https://arxiv.org/pdf/2503.20313)]
